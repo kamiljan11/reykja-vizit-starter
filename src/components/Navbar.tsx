@@ -1,13 +1,16 @@
 import { useState } from "react";
 import { Menu, X } from "lucide-react";
+import { useLanguage } from "@/i18n/LanguageContext";
+import LanguageSwitcher from "./LanguageSwitcher";
 
 const Navbar = () => {
   const [open, setOpen] = useState(false);
+  const { t } = useLanguage();
 
   const links = [
-    { href: "#um-okkur", label: "Um okkur" },
-    { href: "#matseðill", label: "Matseðill" },
-    { href: "#borda", label: "Opnunartímar" },
+    { href: "#um-okkur", label: t("nav.about") },
+    { href: "#matseðill", label: t("nav.menu") },
+    { href: "#borda", label: t("nav.hours") },
   ];
 
   return (
@@ -22,13 +25,17 @@ const Navbar = () => {
             </a>
           ))}
           <a href="tel:5551234" className="px-5 py-2 bg-accent text-accent-foreground font-body font-semibold text-sm rounded-sm hover:opacity-90 transition-opacity">
-            Bóka borð
+            {t("nav.book")}
           </a>
+          <LanguageSwitcher />
         </div>
 
-        <button onClick={() => setOpen(!open)} className="md:hidden text-foreground" aria-label="Menu">
-          {open ? <X size={24} /> : <Menu size={24} />}
-        </button>
+        <div className="flex items-center gap-4 md:hidden">
+          <LanguageSwitcher />
+          <button onClick={() => setOpen(!open)} className="text-foreground" aria-label="Menu">
+            {open ? <X size={24} /> : <Menu size={24} />}
+          </button>
+        </div>
       </div>
 
       {open && (
@@ -39,7 +46,7 @@ const Navbar = () => {
             </a>
           ))}
           <a href="tel:5551234" className="block text-center px-5 py-2 bg-accent text-accent-foreground font-body font-semibold rounded-sm">
-            Bóka borð
+            {t("nav.book")}
           </a>
         </div>
       )}
