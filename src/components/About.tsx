@@ -1,42 +1,38 @@
 import interiorImage from "@/assets/interior.jpg";
+import { useLanguage } from "@/i18n/LanguageContext";
 
 const About = () => {
+  const { t } = useLanguage();
+
   return (
     <section id="um-okkur" className="py-24 px-6">
       <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-12 items-center">
         <div className="space-y-6">
-          <p className="font-body text-sm tracking-[0.2em] uppercase text-accent font-semibold">Um okkur</p>
+          <p className="font-body text-sm tracking-[0.2em] uppercase text-accent font-semibold">{t("about.label")}</p>
           <h2 className="font-heading text-4xl md:text-5xl font-bold text-foreground">
-            Einfalt & gott — eins og heima
+            {t("about.title")}
           </h2>
-          <p className="font-body text-muted-foreground text-lg leading-relaxed">
-            Eldhúsið er fjölskylduveitingastaður í hjarta Reykjavíkur. Við trúum á einfalda matargerð
-            þar sem hráefnin fá að njóta sín. Íslensku lambalærin okkar, ferskur fiskur og heimilegar
-            súpur eru elduð með kærleika og tíma.
-          </p>
-          <p className="font-body text-muted-foreground text-lg leading-relaxed">
-            Staðurinn er notalegur, hlýr og fullkominn fyrir kvöldverð með fjölskyldunni,
-            stefnumót eða bara góðan mat með góðu fólki.
-          </p>
+          <p className="font-body text-muted-foreground text-lg leading-relaxed">{t("about.p1")}</p>
+          <p className="font-body text-muted-foreground text-lg leading-relaxed">{t("about.p2")}</p>
           <div className="flex gap-12 pt-4">
             <div>
               <p className="font-heading text-3xl font-bold text-accent">7+</p>
-              <p className="font-body text-sm text-muted-foreground">ára reynsla</p>
+              <p className="font-body text-sm text-muted-foreground">{t("about.stat.years")}</p>
             </div>
             <div>
               <p className="font-heading text-3xl font-bold text-accent">100%</p>
-              <p className="font-body text-sm text-muted-foreground">íslenskt hráefni</p>
+              <p className="font-body text-sm text-muted-foreground">{t("about.stat.local")}</p>
             </div>
             <div>
               <p className="font-heading text-3xl font-bold text-accent">4.8</p>
-              <p className="font-body text-sm text-muted-foreground">stjörnur á Google</p>
+              <p className="font-body text-sm text-muted-foreground">{t("about.stat.rating")}</p>
             </div>
           </div>
         </div>
         <div className="relative">
           <img
             src={interiorImage}
-            alt="Notalegt innra rými Eldhússins"
+            alt="Cosy interior of Eldhúsið restaurant"
             className="rounded-lg shadow-xl w-full object-cover aspect-square"
             loading="lazy"
             width={1024}
