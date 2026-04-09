@@ -2,6 +2,7 @@ import { useState } from "react";
 import dishFish from "@/assets/dish-fish.jpg";
 import dishLamb from "@/assets/dish-lamb.jpg";
 import dishDessert from "@/assets/dish-dessert.jpg";
+import dishLambRack from "@/assets/dish-lamb-rack.jpg";
 import { useLanguage } from "@/i18n/LanguageContext";
 import ScrollReveal from "./ScrollReveal";
 
