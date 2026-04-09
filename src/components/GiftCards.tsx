@@ -6,13 +6,13 @@ const GiftCards = () => {
   const { t } = useLanguage();
 
   return (
-    <section className="py-20 px-6 bg-secondary">
+    <section className="py-14 md:py-20 px-6 bg-secondary">
       <div className="max-w-4xl mx-auto">
         <ScrollReveal>
           <div className="bg-card rounded-lg overflow-hidden shadow-xl border border-border grid md:grid-cols-2">
-            <div className="p-10 md:p-14 flex flex-col justify-center">
+            <div className="p-8 md:p-10 lg:p-14 flex flex-col justify-center">
               <Gift className="w-10 h-10 text-accent mb-4" />
-              <h2 className="font-heading text-3xl md:text-4xl font-bold text-foreground mb-4">
+              <h2 className="font-heading text-2xl md:text-3xl lg:text-4xl font-bold text-foreground mb-3 md:mb-4">
                 {t("giftcard.title")}
               </h2>
               <p className="font-body text-muted-foreground leading-relaxed mb-8">
