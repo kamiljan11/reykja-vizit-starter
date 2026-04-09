@@ -12,15 +12,15 @@ const Promo = () => {
   ];
 
   return (
-    <section className="py-24 px-6 bg-foreground">
+    <section className="py-16 md:py-24 px-6 bg-foreground">
       <div className="max-w-4xl mx-auto text-center">
         <p className="font-body text-xs tracking-[0.35em] uppercase text-accent mb-6">
           {t("promo.tag")}
         </p>
-        <h2 className="font-heading text-3xl md:text-5xl lg:text-6xl font-bold text-background mb-3">
+        <h2 className="font-heading text-2xl md:text-3xl lg:text-5xl xl:text-6xl font-bold text-background mb-2 md:mb-3">
           {t("promo.title1")}
         </h2>
-        <h2 className="font-heading text-3xl md:text-5xl lg:text-6xl font-bold italic text-accent mb-8">
+        <h2 className="font-heading text-2xl md:text-3xl lg:text-5xl xl:text-6xl font-bold italic text-accent mb-6 md:mb-8">
           {t("promo.title2")}
         </h2>
         <p className="font-body text-background/60 text-base md:text-lg max-w-2xl mx-auto mb-12 leading-relaxed">
