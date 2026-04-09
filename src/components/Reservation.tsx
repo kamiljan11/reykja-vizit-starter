@@ -1,4 +1,5 @@
 import { useState, useMemo } from "react";
+import heroImage from "@/assets/hero-food.jpg";
 import { CalendarIcon, Users, ChevronLeft, ChevronRight, CheckCircle, Share2 } from "lucide-react";
 import { useLanguage } from "@/i18n/LanguageContext";
 import ScrollReveal from "./ScrollReveal";
