@@ -91,7 +91,7 @@ const Reservation = () => {
   };
 
   return (
-    <section id="boka" className="py-24 px-6 bg-primary relative">
+    <section id="boka" className="py-16 md:py-24 px-4 md:px-6 bg-primary relative">
       {/* DEMO banner */}
       <div className="absolute top-6 left-1/2 -translate-x-1/2 z-10">
         <span className="inline-block px-6 py-1.5 bg-accent text-accent-foreground font-body text-xs font-bold tracking-[0.2em] uppercase rounded-full shadow-lg">
@@ -100,11 +100,11 @@ const Reservation = () => {
       </div>
       <div className="max-w-5xl mx-auto">
         <ScrollReveal>
-          <div className="text-center mb-12">
-            <p className="font-body text-sm tracking-[0.2em] uppercase text-accent font-semibold mb-3">
+          <div className="text-center mb-8 md:mb-12">
+            <p className="font-body text-xs md:text-sm tracking-[0.2em] uppercase text-accent font-semibold mb-2 md:mb-3">
               {t("reservation.label")}
             </p>
-            <h2 className="font-heading text-4xl md:text-5xl font-bold text-primary-foreground mb-4">
+            <h2 className="font-heading text-3xl md:text-4xl lg:text-5xl font-bold text-primary-foreground mb-3 md:mb-4">
               {t("reservation.title")}
             </h2>
           </div>

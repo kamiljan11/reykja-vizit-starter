@@ -6,23 +6,23 @@ const About = () => {
   const { t } = useLanguage();
 
   return (
-    <section id="um-okkur" className="py-24 px-6">
+    <section id="um-okkur" className="py-16 md:py-24 px-6">
       <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-12 items-center">
         <div className="space-y-6">
           <ScrollReveal>
             <p className="font-body text-sm tracking-[0.2em] uppercase text-accent font-semibold">{t("about.label")}</p>
           </ScrollReveal>
           <ScrollReveal delay={0.1}>
-            <h2 className="font-heading text-4xl md:text-5xl font-bold text-foreground">{t("about.title")}</h2>
+            <h2 className="font-heading text-3xl md:text-4xl lg:text-5xl font-bold text-foreground">{t("about.title")}</h2>
           </ScrollReveal>
           <ScrollReveal delay={0.2}>
-            <p className="font-body text-muted-foreground text-lg leading-relaxed">{t("about.p1")}</p>
+            <p className="font-body text-muted-foreground text-base md:text-lg leading-relaxed">{t("about.p1")}</p>
           </ScrollReveal>
           <ScrollReveal delay={0.25}>
-            <p className="font-body text-muted-foreground text-lg leading-relaxed">{t("about.p2")}</p>
+            <p className="font-body text-muted-foreground text-base md:text-lg leading-relaxed">{t("about.p2")}</p>
           </ScrollReveal>
           <ScrollReveal delay={0.3}>
-            <div className="flex gap-12 pt-4">
+            <div className="flex gap-8 md:gap-12 pt-4">
               <div>
                 <p className="font-heading text-3xl font-bold text-accent">7+</p>
                 <p className="font-body text-sm text-muted-foreground">{t("about.stat.years")}</p>

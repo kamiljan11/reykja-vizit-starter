@@ -6,12 +6,12 @@ const Hours = () => {
   const { t } = useLanguage();
 
   return (
-    <section id="borda" className="py-24 px-6">
+    <section id="borda" className="py-16 md:py-24 px-6">
       <div className="max-w-6xl mx-auto">
         <ScrollReveal>
           <div className="text-center mb-16">
             <p className="font-body text-sm tracking-[0.2em] uppercase text-accent font-semibold mb-3">{t("hours.label")}</p>
-            <h2 className="font-heading text-4xl md:text-5xl font-bold text-foreground mb-4">{t("hours.title")}</h2>
+            <h2 className="font-heading text-3xl md:text-4xl lg:text-5xl font-bold text-foreground mb-3 md:mb-4">{t("hours.title")}</h2>
           </div>
         </ScrollReveal>
 

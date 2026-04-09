@@ -43,12 +43,12 @@ const Menu = () => {
   const items = menuData[activeTab];
 
   return (
-    <section id="matseðill" className="py-24 px-6 bg-secondary">
+    <section id="matseðill" className="py-16 md:py-24 px-6 bg-secondary">
       <div className="max-w-6xl mx-auto">
         <ScrollReveal>
           <div className="text-center mb-12">
             <p className="font-body text-sm tracking-[0.2em] uppercase text-accent font-semibold mb-3">{t("menu.label")}</p>
-            <h2 className="font-heading text-4xl md:text-5xl font-bold text-foreground mb-4">{t("menu.title")}</h2>
+            <h2 className="font-heading text-3xl md:text-4xl lg:text-5xl font-bold text-foreground mb-3 md:mb-4">{t("menu.title")}</h2>
             <p className="font-body text-muted-foreground text-lg max-w-lg mx-auto">{t("menu.subtitle")}</p>
           </div>
         </ScrollReveal>

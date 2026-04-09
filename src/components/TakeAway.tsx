@@ -6,16 +6,16 @@ const TakeAway = () => {
   const { t } = useLanguage();
 
   return (
-    <section className="py-20 px-6">
+    <section className="py-14 md:py-20 px-6">
       <div className="max-w-5xl mx-auto">
         <ScrollReveal>
           <div className="bg-accent rounded-lg overflow-hidden shadow-xl grid md:grid-cols-5">
-            <div className="md:col-span-3 p-10 md:p-14">
+            <div className="md:col-span-3 p-8 md:p-10 lg:p-14">
               <div className="inline-flex items-center gap-2 px-4 py-1.5 bg-accent-foreground/20 rounded-full mb-6">
                 <Percent className="w-4 h-4 text-accent-foreground" />
                 <span className="font-body text-sm font-bold text-accent-foreground">{t("takeaway.discount")}</span>
               </div>
-              <h2 className="font-heading text-3xl md:text-4xl font-bold text-accent-foreground mb-4">
+              <h2 className="font-heading text-2xl md:text-3xl lg:text-4xl font-bold text-accent-foreground mb-3 md:mb-4">
                 {t("takeaway.title")}
               </h2>
               <p className="font-body text-accent-foreground/80 leading-relaxed mb-6">
