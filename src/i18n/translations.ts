@@ -156,6 +156,20 @@ const translations = {
     pl: "Wolisz zadzwonić? Skontaktuj się bezpośrednio: 555-1234",
   },
   "reservation.callNow": { en: "Call now", is: "Hringdu núna", pl: "Zadzwoń teraz" },
+  "reservation.name": { en: "Name", is: "Nafn", pl: "Imię" },
+  "reservation.namePlaceholder": { en: "Your name", is: "Þitt nafn", pl: "Twoje imię" },
+  "reservation.date": { en: "Date", is: "Dagsetning", pl: "Data" },
+  "reservation.time": { en: "Time", is: "Tími", pl: "Godzina" },
+  "reservation.guests": { en: "Guests", is: "Gestir", pl: "Osoby" },
+  "reservation.guest": { en: "guest", is: "gestur", pl: "osoba" },
+  "reservation.guestsLabel": { en: "guests", is: "gestir", pl: "osoby" },
+  "reservation.submit": { en: "Reserve table", is: "Bóka borð", pl: "Zarezerwuj stolik" },
+  "reservation.success": { en: "Table reserved!", is: "Borð bókað!", pl: "Stolik zarezerwowany!" },
+  "reservation.successDesc": {
+    en: "We'll send you a confirmation email shortly. See you soon!",
+    is: "Við sendum þér staðfestingu í tölvupósti fljótlega. Sjáumst!",
+    pl: "Wkrótce wyślemy Ci e-mail z potwierdzeniem. Do zobaczenia!",
+  },
 
   // Gift Cards
   "giftcard.title": { en: "Gjafabréf — Gift Cards", is: "Gjafabréf", pl: "Karty podarunkowe" },
