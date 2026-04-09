@@ -10,6 +10,7 @@ const translations = {
   // Navbar
   "nav.about": { en: "About us", is: "Um okkur", pl: "O nas" },
   "nav.menu": { en: "Menu", is: "Matseðill", pl: "Menu" },
+  "nav.gallery": { en: "Gallery", is: "Myndir", pl: "Galeria" },
   "nav.hours": { en: "Opening hours", is: "Opnunartímar", pl: "Godziny otwarcia" },
   "nav.book": { en: "Book a table", is: "Bóka borð", pl: "Zarezerwuj stolik" },
 
@@ -49,6 +50,20 @@ const translations = {
     is: "Smakkaðu besta sem íslenskt hráefni hefur upp á að bjóða.",
     pl: "Spróbuj tego, co najlepsze z islandzkich składników.",
   },
+  "menu.tab.starters": { en: "Starters", is: "Forréttir", pl: "Przystawki" },
+  "menu.tab.mains": { en: "Main courses", is: "Aðalréttir", pl: "Dania główne" },
+  "menu.tab.desserts": { en: "Desserts", is: "Eftiréttir", pl: "Desery" },
+  "menu.tab.drinks": { en: "Drinks", is: "Drykkir", pl: "Napoje" },
+
+  // Starters
+  "menu.s1.name": { en: "Langoustine soup", is: "Humarssúpa", pl: "Zupa z homarca" },
+  "menu.s1.desc": { en: "Creamy Icelandic langoustine bisque with fresh bread.", is: "Kremað íslensk humarsúpa með fersku brauði.", pl: "Kremowa zupa z islandzkiego homarca ze świeżym chlebem." },
+  "menu.s2.name": { en: "Smoked trout", is: "Reyktur silungur", pl: "Wędzony pstrąg" },
+  "menu.s2.desc": { en: "House-smoked trout with horseradish cream and rye crumble.", is: "Heimilisreyktur silungur með piparrótarkremmi og rúgmylsnu.", pl: "Domowego wędzenia pstrąg z kremem chrzanowym i żytnią kruszonką." },
+  "menu.s3.name": { en: "Beetroot salad", is: "Rauðrófusalat", pl: "Sałatka z buraków" },
+  "menu.s3.desc": { en: "Roasted beetroot with skyr, walnuts and dill.", is: "Bakað rauðrófa með skyri, valhnetu og dilli.", pl: "Pieczone buraki ze skyrem, orzechami i koprem." },
+
+  // Mains
   "menu.item1.name": { en: "Pan-fried arctic char", is: "Steiktur bleikja", pl: "Smażony golec arktyczny" },
   "menu.item1.desc": {
     en: "Fresh arctic char fillet pan-fried in butter with herbs, lemon and mashed potatoes.",
@@ -61,13 +76,98 @@ const translations = {
     is: "Hefðbundin íslensk lambakjötsúpa með rótargrænmeti og ferskum jurtum.",
     pl: "Tradycyjna islandzka zupa z jagnięciny z warzywami korzeniowymi i świeżymi ziołami.",
   },
+  "menu.m3.name": { en: "Grilled lamb rack", is: "Grilluð lambahryggur", pl: "Grillowany kotlet jagnięcy" },
+  "menu.m3.desc": { en: "Herb-crusted lamb rack with roasted root vegetables and red wine jus.", is: "Jurtakryddaður lambahryggur með bökuðu rótargrænmeti og rauðvínssósu.", pl: "Kotlet jagnięcy w ziołowej panierce z pieczonymi warzywami i sosem z czerwonego wina." },
+
+  // Desserts
   "menu.item3.name": { en: "Skyr cake with berries", is: "Skyrterta með berjum", pl: "Ciasto skyr z jagodami" },
   "menu.item3.desc": {
     en: "Creamy skyr on a whey biscuit base with fresh Icelandic berry sauce and almonds.",
     is: "Kremað skyr á mysingarbotni með fersku íslensku berjasoði og möndlum.",
     pl: "Kremowe skyr na biszkoptowej bazie z sosem jagodowym i migdałami.",
   },
+  "menu.d2.name": { en: "Chocolate lava cake", is: "Súkkulaðihraunköka", pl: "Czekoladowy lava cake" },
+  "menu.d2.desc": { en: "Warm chocolate fondant with vanilla skyr ice cream.", is: "Heitt súkkulaðihjarta með vanillu skyrísi.", pl: "Ciepły fondant czekoladowy z lodami skyr waniliowymi." },
+
+  // Drinks
+  "menu.dr1.name": { en: "Icelandic craft beer", is: "Íslenskt smábruggsbjór", pl: "Islandzkie piwo rzemieślnicze" },
+  "menu.dr1.desc": { en: "Selection of local Icelandic microbrews on tap.", is: "Úrval af íslenskum smábruggsbjórum á krana.", pl: "Wybór lokalnych islandzkich piw z kranu." },
+  "menu.dr2.name": { en: "Brennivín cocktail", is: "Brennivíns-kokteill", pl: "Koktajl Brennivín" },
+  "menu.dr2.desc": { en: "Our signature cocktail with Brennivín, blueberry and thyme.", is: "Sérstakur kokteill okkar með Brennivíni, bláberri og blóðbergi.", pl: "Nasz firmowy koktajl z Brennivín, borówką i tymiankiem." },
+  "menu.dr3.name": { en: "Hot chocolate", is: "Heitt kakó", pl: "Gorąca czekolada" },
+  "menu.dr3.desc": { en: "Rich Icelandic hot chocolate with whipped cream.", is: "Ríkt íslenskt kakó með þeyttum rjóma.", pl: "Gęsta islandzka gorąca czekolada z bitą śmietaną." },
+
   "menu.seeAll": { en: "See full menu", is: "Sjá allan matseðilinn", pl: "Zobacz pełne menu" },
+
+  // Gallery
+  "gallery.label": { en: "Gallery", is: "Myndir", pl: "Galeria" },
+  "gallery.title": { en: "A taste of our world", is: "Bragð af okkar heimi", pl: "Smak naszego świata" },
+  "gallery.subtitle": {
+    en: "Step inside Eldhúsið — from our kitchen to your table.",
+    is: "Stígðu inn í Eldhúsið — frá eldhúsinu á borðið þitt.",
+    pl: "Zajrzyj do Eldhúsið — od naszej kuchni do Twojego stołu.",
+  },
+  "gallery.alt1": { en: "Signature dishes", is: "Sérréttir", pl: "Dania firmowe" },
+  "gallery.alt2": { en: "Restaurant interior", is: "Innanhúss", pl: "Wnętrze restauracji" },
+  "gallery.alt3": { en: "Arctic char dish", is: "Bleikjuréttur", pl: "Danie z gólca" },
+  "gallery.alt4": { en: "Lamb soup", is: "Lambakjötsúpa", pl: "Zupa z jagnięciny" },
+  "gallery.alt5": { en: "Skyr dessert", is: "Skyreftirréttur", pl: "Deser skyr" },
+
+  // Reviews
+  "reviews.label": { en: "Reviews", is: "Umsagnir", pl: "Opinie" },
+  "reviews.title": { en: "What our guests say", is: "Hvað gestir okkar segja", pl: "Co mówią nasi goście" },
+  "reviews.subtitle": { en: "Real stories from real people.", is: "Alvöru sögur frá alvöru fólki.", pl: "Prawdziwe historie prawdziwych ludzi." },
+  "reviews.r1.location": { en: "Tourist from UK", is: "Ferðamaður frá Bretlandi", pl: "Turystka z Wielkiej Brytanii" },
+  "reviews.r1.text": {
+    en: "The best lamb soup I've ever had. The atmosphere is so warm and welcoming — it really feels like eating at someone's home. Will definitely come back.",
+    is: "Besta lambakjötsúpan sem ég hef smakkað. Andrúmsloftið er svo hlýtt og notalegt — maður finnur eins og maður sé heima hjá einhverjum. Kem endilega aftur.",
+    pl: "Najlepsza zupa jagnięca jaką jadłam. Atmosfera jest tak ciepła i gościnna — naprawdę czujesz się jak u kogoś w domu. Na pewno wrócę.",
+  },
+  "reviews.r2.location": { en: "Local from Reykjavík", is: "Heimamaður í Reykjavík", pl: "Miejscowy z Reykjavíku" },
+  "reviews.r2.text": {
+    en: "Our family's go-to place. The kids love it, the food is always consistent and honestly priced. The skyr cake is unreal.",
+    is: "Uppáhaldsstaður fjölskyldunnar. Börnunum finnst frábært, maturinn er alltaf jafn góður og á sanngjörnu verði. Skyrtertan er ótrúleg.",
+    pl: "Ulubione miejsce naszej rodziny. Dzieci to uwielbiają, jedzenie jest zawsze dobre i uczciwie wycenione. Ciasto skyr jest nieziemskie.",
+  },
+  "reviews.r3.location": { en: "Tourist from Poland", is: "Ferðamaður frá Póllandi", pl: "Turystka z Polski" },
+  "reviews.r3.text": {
+    en: "We found this gem on our last day in Iceland and wished we'd discovered it sooner. The arctic char was perfectly cooked. Highly recommend!",
+    is: "Við fundum þessa gimstein á síðasta degi okkar á Íslandi og óskaði okkur að við hefðum fundið það fyrr. Bleikjan var fullkomlega steikt. Mæli eindregið með!",
+    pl: "Odkryliśmy ten klejnot ostatniego dnia na Islandii i żałujemy, że nie znaleźliśmy go wcześniej. Golec arktyczny był idealnie przyrządzony. Gorąco polecam!",
+  },
+  "reviews.googleBadge": { en: "Based on 240+ Google reviews", is: "Byggt á 240+ Google umsögnum", pl: "Na podstawie 240+ opinii Google" },
+
+  // Reservation
+  "reservation.label": { en: "Reservations", is: "Bókanir", pl: "Rezerwacje" },
+  "reservation.title": { en: "Book your table", is: "Bókaðu borðið þitt", pl: "Zarezerwuj stolik" },
+  "reservation.subtitle": {
+    en: "Reserve your spot and we'll have everything ready for you.",
+    is: "Bókaðu þinn stað og við sjáum um allt fyrir þig.",
+    pl: "Zarezerwuj miejsce, a my przygotujemy wszystko dla Ciebie.",
+  },
+  "reservation.name": { en: "Name", is: "Nafn", pl: "Imię" },
+  "reservation.namePlaceholder": { en: "Your name", is: "Þitt nafn", pl: "Twoje imię" },
+  "reservation.email": { en: "Email", is: "Netfang", pl: "E-mail" },
+  "reservation.emailPlaceholder": { en: "your@email.com", is: "þitt@netfang.is", pl: "twoj@email.pl" },
+  "reservation.date": { en: "Date", is: "Dagsetning", pl: "Data" },
+  "reservation.time": { en: "Time", is: "Tími", pl: "Godzina" },
+  "reservation.guests": { en: "Guests", is: "Gestir", pl: "Osoby" },
+  "reservation.guest": { en: "guest", is: "gestur", pl: "osoba" },
+  "reservation.guestsLabel": { en: "guests", is: "gestir", pl: "osoby" },
+  "reservation.message": { en: "Special requests", is: "Sérstakar óskir", pl: "Specjalne życzenia" },
+  "reservation.messagePlaceholder": {
+    en: "Allergies, special occasion, highchair...",
+    is: "Ofnæmi, sérstakt tilefni, barnastóll...",
+    pl: "Alergie, specjalna okazja, krzesełko dla dziecka...",
+  },
+  "reservation.submit": { en: "Reserve table", is: "Bóka borð", pl: "Zarezerwuj stolik" },
+  "reservation.callInstead": { en: "Or call 555-1234", is: "Eða hringdu 555-1234", pl: "Lub zadzwoń 555-1234" },
+  "reservation.success": { en: "Table reserved!", is: "Borð bókað!", pl: "Stolik zarezerwowany!" },
+  "reservation.successDesc": {
+    en: "We'll send you a confirmation email shortly. See you soon!",
+    is: "Við sendum þér staðfestingu í tölvupósti fljótlega. Sjáumst!",
+    pl: "Wkrótce wyślemy Ci e-mail z potwierdzeniem. Do zobaczenia!",
+  },
 
   // Hours
   "hours.label": { en: "Visit us", is: "Heimsóktu okkur", pl: "Odwiedź nas" },
