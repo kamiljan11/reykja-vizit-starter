@@ -105,10 +105,10 @@ const Reservation = () => {
 
         <ScrollReveal delay={0.15}>
           {/* DineOut-style dark widget */}
-          <div className="rounded-xl overflow-hidden shadow-2xl" style={{ background: "#1a2332" }}>
+          <div className="rounded-xl overflow-hidden shadow-2xl" style={{ background: "#0F1B2D" }}>
             {/* Header with restaurant info */}
             <div className="relative h-48 overflow-hidden">
-              <div className="absolute inset-0 bg-gradient-to-b from-transparent to-[#1a2332]" />
+              <div className="absolute inset-0 bg-gradient-to-b from-transparent to-[#0F1B2D]" />
               <div className="absolute bottom-4 left-6 flex items-center gap-4">
                 <div className="w-14 h-14 rounded-full bg-card border-2 border-white/20 flex items-center justify-center">
                   <span className="font-heading text-foreground text-lg font-bold">E</span>
@@ -163,7 +163,7 @@ const Reservation = () => {
                     </div>
 
                     {/* Step tabs */}
-                    <div className="flex rounded-full overflow-hidden mb-6" style={{ background: "#253040" }}>
+                    <div className="flex rounded-full overflow-hidden mb-6" style={{ background: "#172742" }}>
                       <button
                         onClick={() => setStep("when")}
                         className={`flex-1 flex items-center justify-center gap-2 py-2.5 text-sm font-body font-medium transition-all ${
@@ -197,7 +197,7 @@ const Reservation = () => {
                         </div>
 
                         {/* Calendar */}
-                        <div className="rounded-lg p-4" style={{ background: "#253040" }}>
+                        <div className="rounded-lg p-4" style={{ background: "#172742" }}>
                           <div className="flex items-center justify-between mb-4">
                             <span className="text-white font-body text-sm font-semibold capitalize">{monthName}</span>
                             <div className="flex gap-2">
@@ -296,7 +296,7 @@ const Reservation = () => {
 
                     {step === "book" && (
                       <div>
-                        <div className="rounded-lg p-5 mb-6 space-y-3" style={{ background: "#253040" }}>
+                        <div className="rounded-lg p-5 mb-6 space-y-3" style={{ background: "#172742" }}>
                           <div className="flex justify-between text-sm font-body">
                             <span className="text-white/50">{t("reservation.date")}</span>
                             <span className="text-white font-medium">
@@ -319,7 +319,7 @@ const Reservation = () => {
                             type="text"
                             placeholder={t("reservation.namePlaceholder")}
                             className="w-full px-4 py-3 rounded-lg text-white text-sm font-body placeholder:text-white/30 focus:outline-none focus:ring-2 focus:ring-accent border border-white/10"
-                            style={{ background: "#253040" }}
+                            style={{ background: "#172742" }}
                           />
                         </div>
 
