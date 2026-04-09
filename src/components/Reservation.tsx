@@ -108,6 +108,11 @@ const Reservation = () => {
           <div className="rounded-xl overflow-hidden shadow-2xl" style={{ background: "#0F1B2D" }}>
             {/* Header with restaurant info */}
             <div className="relative h-48 overflow-hidden">
+              <img
+                src={heroImage}
+                alt="Eldhúsið restaurant"
+                className="absolute inset-0 w-full h-full object-cover"
+              />
               <div className="absolute inset-0 bg-gradient-to-b from-transparent to-[#0F1B2D]" />
               <div className="absolute bottom-4 left-6 flex items-center gap-4">
                 <div className="w-14 h-14 rounded-full bg-card border-2 border-white/20 flex items-center justify-center">

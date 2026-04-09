@@ -46,14 +46,14 @@ const Reviews = () => {
         <div className="grid md:grid-cols-3 gap-8">
           {reviews.map((review, i) => (
             <ScrollReveal key={i} delay={i * 0.15}>
-              <div className="bg-card rounded-lg p-8 shadow-md border border-border relative group hover:shadow-xl transition-shadow duration-300">
+              <div className="bg-card rounded-lg p-8 shadow-md border border-border relative group hover:shadow-xl transition-shadow duration-300 h-full flex flex-col">
                 <Quote className="w-8 h-8 text-accent/20 absolute top-6 right-6" />
                 <div className="flex gap-1 mb-4">
                   {Array.from({ length: review.rating }).map((_, s) => (
                     <Star key={s} className="w-4 h-4 fill-accent text-accent" />
                   ))}
                 </div>
-                <p className="font-body text-muted-foreground leading-relaxed mb-6 italic">
+                <p className="font-body text-muted-foreground leading-relaxed mb-6 italic flex-1">
                   "{review.text}"
                 </p>
                 <div>
