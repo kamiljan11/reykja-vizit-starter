@@ -91,6 +91,27 @@ const translations = {
   },
   "cta.button": { en: "Book a table — 555-1234", is: "Bóka borð — 555-1234", pl: "Zarezerwuj — 555-1234" },
 
+  // Promo
+  "promo.tag": { en: "BUSINESS AUTOPILOT", is: "VEFUR FYRIR ÞIG", pl: "BIZNES NA AUTOPILOCIE" },
+  "promo.title1": { en: "Want a Website Like This", is: "Viltu vefsíðu eins og þessa", pl: "Chcesz taką stronę" },
+  "promo.title2": { en: "For Your Restaurant?", is: "Fyrir þinn veitingastað?", pl: "Dla Twojej restauracji?" },
+  "promo.desc": {
+    en: "We build stunning, personalised websites for restaurants, cafés, and food businesses. Everything done for you — website, photos, ads, social media. One plan. Zero stress.",
+    is: "Við smíðum falleg, sérsniðin vefsíður fyrir veitingastaði, kaffihús og matarfyrirtæki. Allt gert fyrir þig — vefsíða, ljósmyndir, auglýsingar, samfélagsmiðlar. Eitt pakki. Engin áhyggjur.",
+    pl: "Tworzymy piękne, spersonalizowane strony dla restauracji, kawiarni i firm gastronomicznych. Wszystko zrobione za Ciebie — strona, zdjęcia, reklamy, social media. Jeden plan. Zero stresu.",
+  },
+  "promo.f1": { en: "Custom Website", is: "Sérsniðin vefsíða", pl: "Własna strona" },
+  "promo.f2": { en: "Professional Photos", is: "Faglegar myndir", pl: "Profesjonalne zdjęcia" },
+  "promo.f3": { en: "Social Media Ads", is: "Auglýsingar", pl: "Reklamy w social media" },
+  "promo.f4": { en: "All-In-One Plan", is: "Allt-í-einu", pl: "Pakiet all-in-one" },
+  "promo.cta": { en: "GET STARTED", is: "BYRJAÐU NÚNA", pl: "ROZPOCZNIJ" },
+  "promo.price": { en: "From only 19,990 ISK/month", is: "Frá aðeins 19.990 kr./mán.", pl: "Już od 19 990 ISK/mies." },
+  "promo.perks": {
+    en: "Live in 7 days · Fully personalised · No long-term contracts",
+    is: "Tilbúið á 7 dögum · Fullkomlega sérsniðið · Engir langtímasamningar",
+    pl: "Gotowe w 7 dni · W pełni spersonalizowane · Bez długich umów",
+  },
+
   // Footer
   "footer.desc": {
     en: "A family restaurant in Reykjavík that focuses on honest food from Icelandic ingredients.",
