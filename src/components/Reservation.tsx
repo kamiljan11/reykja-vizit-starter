@@ -1,4 +1,5 @@
 import { useState, useMemo } from "react";
+import heroImage from "@/assets/hero-food.jpg";
 import { CalendarIcon, Users, ChevronLeft, ChevronRight, CheckCircle, Share2 } from "lucide-react";
 import { useLanguage } from "@/i18n/LanguageContext";
 import ScrollReveal from "./ScrollReveal";
@@ -90,7 +91,13 @@ const Reservation = () => {
   };
 
   return (
-    <section id="boka" className="py-24 px-6 bg-primary">
+    <section id="boka" className="py-24 px-6 bg-primary relative">
+      {/* DEMO banner */}
+      <div className="absolute top-6 left-1/2 -translate-x-1/2 z-10">
+        <span className="inline-block px-6 py-1.5 bg-accent text-accent-foreground font-body text-xs font-bold tracking-[0.2em] uppercase rounded-full shadow-lg">
+          Demo — Sýnidæmi
+        </span>
+      </div>
       <div className="max-w-5xl mx-auto">
         <ScrollReveal>
           <div className="text-center mb-12">
@@ -108,6 +115,11 @@ const Reservation = () => {
           <div className="rounded-xl overflow-hidden shadow-2xl" style={{ background: "#0F1B2D" }}>
             {/* Header with restaurant info */}
             <div className="relative h-48 overflow-hidden">
+              <img
+                src={heroImage}
+                alt="Eldhúsið restaurant"
+                className="absolute inset-0 w-full h-full object-cover"
+              />
               <div className="absolute inset-0 bg-gradient-to-b from-transparent to-[#0F1B2D]" />
               <div className="absolute bottom-4 left-6 flex items-center gap-4">
                 <div className="w-14 h-14 rounded-full bg-card border-2 border-white/20 flex items-center justify-center">

@@ -74,13 +74,13 @@ const Menu = () => {
         <div className="grid md:grid-cols-3 gap-8">
           {items.map((item, i) => (
             <ScrollReveal key={`${activeTab}-${i}`} delay={i * 0.1}>
-              <div className="bg-card rounded-lg overflow-hidden shadow-md hover:shadow-xl transition-shadow duration-300 group">
+              <div className="bg-card rounded-lg overflow-hidden shadow-md hover:shadow-xl transition-shadow duration-300 group h-full flex flex-col">
                 {item.image && (
                   <div className="overflow-hidden aspect-[4/3]">
                     <img src={item.image} alt={item.name} className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy" width={800} height={600} />
                   </div>
                 )}
-                <div className="p-6">
+                <div className="p-6 flex-1">
                   <div className="flex justify-between items-start mb-2">
                     <h3 className="font-heading text-xl font-semibold text-foreground">{item.name}</h3>
                     <span className="font-body text-accent font-bold text-lg whitespace-nowrap ml-3">{item.price}</span>
