@@ -2,6 +2,7 @@ import { useState } from "react";
 import dishFish from "@/assets/dish-fish.jpg";
 import dishLamb from "@/assets/dish-lamb.jpg";
 import dishDessert from "@/assets/dish-dessert.jpg";
+import dishLambRack from "@/assets/dish-lamb-rack.jpg";
 import { useLanguage } from "@/i18n/LanguageContext";
 import ScrollReveal from "./ScrollReveal";
 
@@ -27,7 +28,7 @@ const Menu = () => {
     mains: [
       { image: dishFish, name: t("menu.item1.name"), description: t("menu.item1.desc"), price: "3.490 kr." },
       { image: dishLamb, name: t("menu.item2.name"), description: t("menu.item2.desc"), price: "2.290 kr." },
-      { name: t("menu.m3.name"), description: t("menu.m3.desc"), price: "4.890 kr." },
+      { image: dishLambRack, name: t("menu.m3.name"), description: t("menu.m3.desc"), price: "4.890 kr." },
     ],
     desserts: [
       { image: dishDessert, name: t("menu.item3.name"), description: t("menu.item3.desc"), price: "1.790 kr." },
