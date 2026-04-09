@@ -16,13 +16,13 @@ const Hero = () => {
       <div className="absolute inset-0" style={{ background: "var(--hero-overlay)" }} />
 
       <div className="relative z-10 text-center px-6 max-w-3xl">
-        <p className="font-body text-sm tracking-[0.3em] uppercase text-primary-foreground/80 mb-4 animate-fade-up">
+        <p className="font-body text-xs md:text-sm tracking-[0.3em] uppercase text-primary-foreground/80 mb-3 md:mb-4 animate-fade-up">
           {t("hero.tagline")}
         </p>
-        <h1 className="font-heading text-5xl md:text-7xl lg:text-8xl font-bold text-primary-foreground mb-6 animate-fade-up" style={{ animationDelay: "0.15s" }}>
+        <h1 className="font-heading text-4xl md:text-7xl lg:text-8xl font-bold text-primary-foreground mb-4 md:mb-6 animate-fade-up" style={{ animationDelay: "0.15s" }}>
           {t("hero.title")}
         </h1>
-        <p className="font-body text-lg md:text-xl text-primary-foreground/90 mb-10 max-w-xl mx-auto animate-fade-up" style={{ animationDelay: "0.3s" }}>
+        <p className="font-body text-base md:text-xl text-primary-foreground/90 mb-8 md:mb-10 max-w-xl mx-auto animate-fade-up" style={{ animationDelay: "0.3s" }}>
           {t("hero.subtitle")}
         </p>
         <div className="flex flex-col sm:flex-row gap-4 justify-center animate-fade-up" style={{ animationDelay: "0.45s" }}>
