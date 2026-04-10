@@ -285,6 +285,10 @@ const translations = {
   "cookies.save": { en: "Save preferences", is: "Vista stillingar", pl: "Zapisz preferencje" },
   "cookies.back": { en: "Back", is: "Til baka", pl: "Wróć" },
 
+  // Extras
+  "extras.label": { en: "More from us", is: "Meira frá okkur", pl: "Więcej od nas" },
+  "extras.title": { en: "Beyond the table", is: "Út fyrir borðið", pl: "Poza stolikiem" },
+
   // Demo modal
   "demo.title": { en: "This is a demo", is: "Þetta er sýnishorn", pl: "To jest demo" },
   "demo.desc": { en: "This feature would be fully functional on a real website. Want a professional website like this for your food business? We can build it for you!", is: "Þessi virkni væri fullkomlega virk á raunverulegri vefsíðu. Viltu faglega vefsíðu eins og þessa fyrir þinn veitingastað? Við getum smíðað hana fyrir þig!", pl: "Ta funkcja działałaby w pełni na prawdziwej stronie. Chcesz profesjonalną stronę jak ta dla swojego biznesu gastronomicznego? Możemy ją dla Ciebie zbudować!" },
