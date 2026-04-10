@@ -57,13 +57,13 @@ const Navbar = () => {
       </div>
 
       {open && (
-        <div className="md:hidden bg-background border-b border-border px-6 pb-6 space-y-4">
+        <div className="md:hidden bg-background border-b border-border px-6 pb-6 pt-2 space-y-1">
           {links.map((l) => (
-            <a key={l.href} href={l.href} onClick={() => setOpen(false)} className="block font-body text-foreground py-2">
+            <a key={l.href} href={l.href} onClick={() => setOpen(false)} className="block font-body text-foreground py-3 text-lg active:bg-muted/50 rounded-md px-2 -mx-2 transition-colors">
               {l.label}
             </a>
           ))}
-          <a href="#boka" onClick={() => setOpen(false)} className="block text-center px-5 py-2 bg-accent text-accent-foreground font-body font-semibold rounded-sm">
+          <a href="#boka" onClick={() => setOpen(false)} className="block text-center px-5 py-3 mt-2 bg-accent text-accent-foreground font-body font-semibold rounded-sm text-lg active:opacity-80">
             {t("nav.book")}
           </a>
         </div>

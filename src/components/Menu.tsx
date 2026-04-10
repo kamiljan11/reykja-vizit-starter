@@ -66,10 +66,10 @@ const Menu = () => {
               <button
                 key={tab.key}
                 onClick={() => setActiveTab(tab.key)}
-                className={`px-6 py-2.5 rounded-full font-body text-sm font-semibold transition-all duration-300 ${
+                className={`px-5 md:px-6 py-2.5 md:py-2.5 rounded-full font-body text-sm font-semibold transition-all duration-300 min-h-[44px] ${
                   activeTab === tab.key
                     ? "bg-accent text-accent-foreground shadow-md"
-                    : "bg-card text-muted-foreground hover:text-foreground border border-border"
+                    : "bg-card text-muted-foreground hover:text-foreground border border-border active:bg-muted/50"
                 }`}
               >
                 {tab.label}
