@@ -21,13 +21,13 @@ const Index = () => {
       <Hero />
       <About />
       <Menu />
+      <Reviews />
       <Gallery />
       <Events />
-      <TakeAway />
-      <Reviews />
-      <Hours />
       <Reservation />
+      <TakeAway />
       <GiftCards />
+      <Hours />
       <Cta />
       <Promo />
       <Footer />
