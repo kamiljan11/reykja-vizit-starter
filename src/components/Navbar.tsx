@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 import { Menu, X } from "lucide-react";
 import { useLanguage } from "@/i18n/LanguageContext";
 import LanguageSwitcher from "./LanguageSwitcher";
+import { FlameAccent } from "./Decorations";
 
 const Navbar = () => {
   const [open, setOpen] = useState(false);
@@ -30,9 +31,12 @@ const Navbar = () => {
         : "bg-transparent border-b border-transparent"
     }`}>
       <div className="max-w-6xl mx-auto flex items-center justify-between px-6 py-4">
-        <a href="#" className={`font-heading text-2xl font-bold transition-colors duration-300 ${
+        <a href="#" className={`font-heading text-2xl font-bold transition-colors duration-300 flex items-center gap-1.5 ${
           scrolled ? "text-foreground" : "text-primary-foreground"
-        }`}>Eldhúsið</a>
+        }`}>
+          <FlameAccent className={`transition-colors duration-300 ${scrolled ? "text-accent" : "text-accent"}`} />
+          Eldhúsið
+        </a>
 
         <div className="hidden md:flex items-center gap-8">
           {links.map((l) => (

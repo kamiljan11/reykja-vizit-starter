@@ -3,6 +3,7 @@ import { X, Instagram } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
 import { useLanguage } from "@/i18n/LanguageContext";
 import ScrollReveal from "./ScrollReveal";
+import { KnotDivider } from "./Decorations";
 import dishFish from "@/assets/dish-fish.jpg";
 import dishLamb from "@/assets/dish-lamb.jpg";
 import dishDessert from "@/assets/dish-dessert.jpg";
@@ -38,6 +39,7 @@ const Gallery = () => {
           <div className="text-center mb-12">
             <p className="font-body text-sm tracking-[0.2em] uppercase text-accent font-semibold mb-3">{t("gallery.label")}</p>
             <h2 className="font-heading text-3xl md:text-4xl lg:text-5xl font-bold text-foreground mb-3 md:mb-4">{t("gallery.title")}</h2>
+            <KnotDivider className="text-accent mx-auto mb-3" />
             <p className="font-body text-muted-foreground text-lg max-w-lg mx-auto">{t("gallery.subtitle")}</p>
           </div>
         </ScrollReveal>

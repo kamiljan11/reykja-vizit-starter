@@ -1,6 +1,7 @@
 import { Star, Quote } from "lucide-react";
 import { useLanguage } from "@/i18n/LanguageContext";
 import ScrollReveal from "./ScrollReveal";
+import { DiamondDots } from "./Decorations";
 import MobileCarousel from "./MobileCarousel";
 import { useIsMobile } from "@/hooks/use-mobile";
 
@@ -58,6 +59,7 @@ const Reviews = () => {
             <h2 className="font-heading text-3xl md:text-4xl lg:text-5xl font-bold text-foreground mb-3 md:mb-4">
               {t("reviews.title")}
             </h2>
+            <DiamondDots className="text-accent mx-auto mb-2" />
             <p className="font-body text-muted-foreground text-base md:text-lg">
               {t("reviews.subtitle")}
             </p>

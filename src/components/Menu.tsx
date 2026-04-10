@@ -12,6 +12,7 @@ import drinkCocktail from "@/assets/drink-cocktail.jpg";
 import drinkHotchoc from "@/assets/drink-hotchoc.jpg";
 import { useLanguage } from "@/i18n/LanguageContext";
 import ScrollReveal from "./ScrollReveal";
+import { DiamondDots, LeafSprig } from "./Decorations";
 
 type TabKey = "starters" | "mains" | "desserts" | "drinks";
 
@@ -55,7 +56,12 @@ const Menu = () => {
         <ScrollReveal>
           <div className="text-center mb-12">
             <p className="font-body text-sm tracking-[0.2em] uppercase text-accent font-semibold mb-3">{t("menu.label")}</p>
-            <h2 className="font-heading text-3xl md:text-4xl lg:text-5xl font-bold text-foreground mb-3 md:mb-4">{t("menu.title")}</h2>
+            <div className="flex items-center justify-center gap-3 mb-3 md:mb-4">
+              <LeafSprig className="text-accent hidden md:block" />
+              <h2 className="font-heading text-3xl md:text-4xl lg:text-5xl font-bold text-foreground">{t("menu.title")}</h2>
+              <LeafSprig className="text-accent hidden md:block" mirror />
+            </div>
+            <DiamondDots className="text-accent mx-auto mb-3" />
             <p className="font-body text-muted-foreground text-lg max-w-lg mx-auto">{t("menu.subtitle")}</p>
           </div>
         </ScrollReveal>
