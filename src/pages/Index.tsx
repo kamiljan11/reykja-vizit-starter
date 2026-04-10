@@ -6,8 +6,7 @@ import Gallery from "@/components/Gallery";
 import Events from "@/components/Events";
 import Reviews from "@/components/Reviews";
 import Hours from "@/components/Hours";
-import TakeAway from "@/components/TakeAway";
-import GiftCards from "@/components/GiftCards";
+import Extras from "@/components/Extras";
 import Reservation from "@/components/Reservation";
 
 import Promo from "@/components/Promo";
@@ -26,9 +25,8 @@ const Index = () => {
         <Reviews />
         <Gallery />
         <Events />
-        <Reservation />
-        <TakeAway />
-        <GiftCards />
+      <Extras />
+      <Reservation />
         <Hours />
         
         <Promo />
