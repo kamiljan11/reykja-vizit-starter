@@ -7,6 +7,7 @@ import { useIsMobile } from "@/hooks/use-mobile";
 
 const Events = () => {
   const { t } = useLanguage();
+  const { openDemo } = useDemo();
   const isMobile = useIsMobile();
 
   const events = [

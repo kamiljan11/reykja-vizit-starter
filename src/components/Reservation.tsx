@@ -9,6 +9,7 @@ type Step = "when" | "guests" | "book";
 
 const Reservation = () => {
   const { t, lang } = useLanguage();
+  const { openDemo } = useDemo();
   const [step, setStep] = useState<Step>("when");
   const [selectedDate, setSelectedDate] = useState<Date | null>(null);
   const [selectedTime, setSelectedTime] = useState<string | null>(null);

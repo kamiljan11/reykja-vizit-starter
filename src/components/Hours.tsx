@@ -5,6 +5,7 @@ import { useDemo } from "./DemoModal";
 
 const Hours = () => {
   const { t } = useLanguage();
+  const { openDemo } = useDemo();
 
   return (
     <section id="borda" className="py-16 md:py-24 px-6">

@@ -5,6 +5,7 @@ import { useDemo } from "./DemoModal";
 
 const GiftCards = () => {
   const { t } = useLanguage();
+  const { openDemo } = useDemo();
 
   return (
     <section className="py-14 md:py-20 px-6 bg-secondary">
