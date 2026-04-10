@@ -289,6 +289,53 @@ const translations = {
   "extras.label": { en: "More from us", is: "Meira frá okkur", pl: "Więcej od nas" },
   "extras.title": { en: "Beyond the table", is: "Út fyrir borðið", pl: "Poza stolikiem" },
 
+  // Team
+  "team.label": { en: "Our family", is: "Fjölskyldan okkar", pl: "Nasza rodzina" },
+  "team.title": { en: "The people behind the food", is: "Fólkið á bak við matinn", pl: "Ludzie za jedzeniem" },
+  "team.subtitle": { en: "Meet the family that makes Eldhúsið feel like home.", is: "Kynntu þér fjölskylduna sem gerir Eldhúsið að heimili.", pl: "Poznaj rodzinę, która sprawia, że Eldhúsið czuje się jak dom." },
+  "team.m1.name": { en: "Jón & Helga", is: "Jón & Helga", pl: "Jón & Helga" },
+  "team.m1.role": { en: "Founders & Owners", is: "Stofnendur & eigendur", pl: "Założyciele i właściciele" },
+  "team.m1.desc": { en: "The heart and soul of Eldhúsið. They turned their Sunday dinner tradition into a restaurant where everyone is welcome.", is: "Hjarta og sál Eldhússins. Þau breyttu sunnudagskvöldverðarhefðinni í veitingastað þar sem allir eru velkomnir.", pl: "Serce i dusza Eldhúsið. Zamienili tradycję niedzielnych kolacji w restaurację, gdzie każdy jest mile widziany." },
+  "team.m2.name": { en: "Aron", is: "Aron", pl: "Aron" },
+  "team.m2.role": { en: "Head Chef", is: "Aðalkokkur", pl: "Szef kuchni" },
+  "team.m2.desc": { en: "Trained by Helga herself. Aron brings fresh ideas while keeping grandma's recipes sacred.", is: "Þjálfaður af Helgu sjálfri. Aron færir nýjar hugmyndir á meðan uppskriftir ömmu eru heilagar.", pl: "Wyszkolony przez samą Helgę. Aron wnosi świeże pomysły, szanując babcine przepisy." },
+  "team.m3.name": { en: "Sara", is: "Sara", pl: "Sara" },
+  "team.m3.role": { en: "Front of House", is: "Þjónustustjóri", pl: "Obsługa gości" },
+  "team.m3.desc": { en: "Sara remembers your name, your favourite table, and how you like your coffee. She makes everyone feel at home.", is: "Sara man nafnið þitt, uppáhaldsborðið og hvernig þú vilt kaffið. Hún lætur alla líða eins og heima.", pl: "Sara pamięta Twoje imię, ulubiony stolik i jak lubisz kawę. Sprawia, że każdy czuje się jak w domu." },
+
+  // FAQ
+  "faq.label": { en: "Questions?", is: "Spurningar?", pl: "Pytania?" },
+  "faq.title": { en: "Frequently asked", is: "Algengar spurningar", pl: "Często zadawane" },
+  "faq.q1": { en: "Do you accommodate food allergies?", is: "Komið þið til móts við fæðuofnæmi?", pl: "Czy uwzględniacie alergie pokarmowe?" },
+  "faq.a1": { en: "Absolutely. Just let us know when booking or arriving — our kitchen can adjust most dishes. We take allergies very seriously.", is: "Algjörlega. Láttu okkur vita við bókun eða komu — eldhúsið okkar getur aðlagað flesta rétti. Við tökum ofnæmi mjög alvarlega.", pl: "Oczywiście. Wystarczy poinformować nas przy rezerwacji lub na miejscu — nasza kuchnia dostosuje większość dań. Alergie traktujemy bardzo poważnie." },
+  "faq.q2": { en: "Is there parking nearby?", is: "Er bílastæði í nágrenninu?", pl: "Czy jest parking w pobliżu?" },
+  "faq.a2": { en: "Street parking is available on Laugavegur and side streets. The Kolaportið parking garage is a 3-minute walk away.", is: "Götuparking er á Laugavegi og hliðargötum. Kolaportið bílastæðahúsið er í 3 mínútna göngufjarlægð.", pl: "Parking uliczny jest dostępny na Laugavegur i bocznych ulicach. Parking Kolaportið jest 3 minuty spacerem." },
+  "faq.q3": { en: "Are children welcome?", is: "Eru börn velkomin?", pl: "Czy dzieci są mile widziane?" },
+  "faq.a3": { en: "Of course! We have a kids menu, high chairs, and colouring pages. Sundays are Family Day — kids eat free!", is: "Auðvitað! Við erum með barnaseðil, háa stóla og litamyndir. Sunnudagar eru fjölskyldudagar — börn borða frítt!", pl: "Oczywiście! Mamy menu dla dzieci, krzesełka i kolorowanki. Niedziele to Dzień Rodziny — dzieci jedzą za darmo!" },
+  "faq.q4": { en: "Do I need a reservation?", is: "Þarf ég bókun?", pl: "Czy potrzebuję rezerwacji?" },
+  "faq.a4": { en: "We recommend booking for dinner, especially on weekends. Lunch is usually walk-in friendly. Call us or use the booking form above!", is: "Við mælum með bókun fyrir kvöldmat, sérstaklega um helgar. Hádegismatur er yfirleitt án bókunar. Hringdu eða notaðu bókunarformið!", pl: "Zalecamy rezerwację na kolację, szczególnie w weekendy. Na lunch zwykle można przyjść bez rezerwacji. Zadzwoń lub użyj formularza powyżej!" },
+  "faq.q5": { en: "Is there a dress code?", is: "Er klæðaburður?", pl: "Czy obowiązuje dress code?" },
+  "faq.a5": { en: "No dress code — come as you are. This is a family place, not a fancy one. Jeans and Icelandic sweaters are always welcome.", is: "Enginn klæðaburður — komdu eins og þú ert. Þetta er fjölskyldustaður, ekki fínn. Gallabuxur og íslenskar peysa eru alltaf velkomnar.", pl: "Brak dress code'u — przyjdź taki jaki jesteś. To rodzinne miejsce, nie elegancka restauracja. Dżinsy i islandzkie swetry zawsze mile widziane." },
+  "faq.q6": { en: "Do you offer takeaway?", is: "Eruð þið með take away?", pl: "Czy oferujecie na wynos?" },
+  "faq.a6": { en: "Yes! 20% off the full menu for takeaway. Call ahead and we'll have it ready in 15-20 minutes.", is: "Já! 20% afsláttur af öllum matseðli fyrir take away. Hringdu fyrirfram og allt er tilbúið á 15-20 mínútum.", pl: "Tak! 20% rabatu na całe menu na wynos. Zadzwoń wcześniej, a przygotujemy zamówienie w 15-20 minut." },
+
+  // Timeline
+  "timeline.label": { en: "Our journey", is: "Ferðalagið okkar", pl: "Nasza droga" },
+  "timeline.title": { en: "From Sunday dinners to Laugavegur", is: "Frá sunnudagskvöldverðum á Laugaveg", pl: "Od niedzielnych kolacji na Laugavegur" },
+  "timeline.e1.title": { en: "The first Sunday dinner", is: "Fyrsti sunnudagskvöldverðurinn", pl: "Pierwsza niedzielna kolacja" },
+  "timeline.e1.desc": { en: "Jón and Helga invite 12 friends to their apartment for homemade lamb stew. Everyone says: 'You should open a restaurant!'", is: "Jón og Helga bjóða 12 vinum í íbúðina í heimatilbúna lambakjötsúpu. Allir segja: 'Þið ættuð að opna veitingastað!'", pl: "Jón i Helga zapraszają 12 przyjaciół na domowy gulasz jagnięcy. Wszyscy mówią: 'Powinniście otworzyć restaurację!'" },
+  "timeline.e2.title": { en: "Eldhúsið opens its doors", is: "Eldhúsið opnar dyr sínar", pl: "Eldhúsið otwiera drzwi" },
+  "timeline.e2.desc": { en: "A tiny 20-seat space on Laugavegur. Hand-written menu, mismatched chairs, and Helga's grandmother's recipes on the wall.", is: "Lítill 20 sæta staður á Laugavegi. Handskrifaður matseðill, ólíkir stólar og uppskriftir ömmu Helgu á veggnum.", pl: "Malutka sala na 20 miejsc przy Laugavegur. Ręcznie pisane menu, niedopasowane krzesła i przepisy babci Helgi na ścianie." },
+  "timeline.e3.title": { en: "Survived Covid together", is: "Lifðum af Covid saman", pl: "Przetrwaliśmy Covid razem" },
+  "timeline.e3.desc": { en: "Switched to takeaway and home delivery. The neighbourhood rallied around us — we'll never forget that.", is: "Fórum yfir í take away og heimsendingu. Hverfið safnaðist saman — við gleymum því aldrei.", pl: "Przeszliśmy na wynos i dostawy. Sąsiedztwo nas wsparło — nigdy tego nie zapomnimy." },
+  "timeline.e4.title": { en: "Expanded to 50 seats", is: "Stækkuðum í 50 sæti", pl: "Powiększenie do 50 miejsc" },
+  "timeline.e4.desc": { en: "Took over the space next door. More room, same warmth. Aron joins as head chef — trained by Helga herself.", is: "Tókum yfir rýmið við hliðina. Meira pláss, sama hlýjan. Aron kemur sem aðalkokkur — þjálfaður af Helgu.", pl: "Przejęliśmy lokal obok. Więcej miejsca, to samo ciepło. Aron dołącza jako szef kuchni — wyszkolony przez Helgę." },
+  "timeline.e5.title": { en: "Best family restaurant in Reykjavík", is: "Besti fjölskylduveitingastaður Reykjavíkur", pl: "Najlepsza rodzinna restauracja w Reykjavíku" },
+  "timeline.e5.desc": { en: "Voted by locals two years in a row. But the real prize? Seeing families come back generation after generation.", is: "Kosið af heimamönnum tvö ár í röð. En raunveruleg verðlaunin? Að sjá fjölskyldur koma aftur kynslóð eftir kynslóð.", pl: "Wybrana przez mieszkańców dwa lata z rzędu. Ale prawdziwa nagroda? Widok rodzin wracających pokolenie po pokoleniu." },
+
+  // Instagram
+  "insta.title": { en: "Follow us on Instagram", is: "Fylgdu okkur á Instagram", pl: "Obserwuj nas na Instagramie" },
+
   // Demo modal
   "demo.title": { en: "This is a demo", is: "Þetta er sýnishorn", pl: "To jest demo" },
   "demo.desc": { en: "This feature would be fully functional on a real website. Want a professional website like this for your food business? We can build it for you!", is: "Þessi virkni væri fullkomlega virk á raunverulegri vefsíðu. Viltu faglega vefsíðu eins og þessa fyrir þinn veitingastað? Við getum smíðað hana fyrir þig!", pl: "Ta funkcja działałaby w pełni na prawdziwej stronie. Chcesz profesjonalną stronę jak ta dla swojego biznesu gastronomicznego? Możemy ją dla Ciebie zbudować!" },
