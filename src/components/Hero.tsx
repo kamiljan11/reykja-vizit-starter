@@ -8,9 +8,9 @@ const Hero = () => {
     <section className="relative h-screen min-h-[600px] flex items-center justify-center overflow-hidden">
       <img
         src={heroImage}
-        alt="Icelandic lamb chops with roasted vegetables and soup"
-        className="absolute inset-0 w-full h-full object-cover"
-        width={1920}
+        alt="Icelandic restaurant table with lamb, fish and candles"
+        className="absolute inset-0 w-full h-full object-cover object-center"
+        width={1080}
         height={1080}
       />
       <div className="absolute inset-0" style={{ background: "var(--hero-overlay)" }} />
