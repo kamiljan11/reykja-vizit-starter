@@ -9,11 +9,12 @@ interface ScrollRevealProps {
 }
 
 const ScrollReveal = ({ children, className = "", delay = 0, direction = "up" }: ScrollRevealProps) => {
+  const isMobile = typeof window !== "undefined" && window.innerWidth < 768;
   const variants = {
     hidden: {
       opacity: 0,
-      y: direction === "up" ? 40 : 0,
-      x: direction === "left" ? -40 : direction === "right" ? 40 : 0,
+      y: direction === "up" ? (isMobile ? 20 : 40) : 0,
+      x: direction === "left" ? (isMobile ? -20 : -40) : direction === "right" ? (isMobile ? 20 : 40) : 0,
     },
     visible: {
       opacity: 1,

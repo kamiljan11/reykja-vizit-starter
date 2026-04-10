@@ -5,7 +5,7 @@ const Hero = () => {
   const { t } = useLanguage();
 
   return (
-    <section className="relative h-screen min-h-[600px] flex items-center justify-center overflow-hidden">
+    <section className="relative h-[100svh] min-h-[600px] flex items-center justify-center overflow-hidden">
       <img
         src={heroImage}
         alt="Icelandic restaurant table with lamb, fish and candles"

@@ -111,3 +111,37 @@
     scrollbar-width: none;
   }
 }
+
+/* Mobile optimizations */
+@media (max-width: 767px) {
+  /* Smooth momentum scrolling */
+  html {
+    -webkit-overflow-scrolling: touch;
+    scroll-behavior: smooth;
+  }
+
+  /* Prevent tap highlight flash */
+  * {
+    -webkit-tap-highlight-color: transparent;
+  }
+
+  /* Ensure interactive touch targets meet 44px minimum */
+  button:not(.w-2),
+  a:not(.text-xs) {
+    min-height: 44px;
+  }
+
+  /* Reduce motion for battery savings */
+  @media (prefers-reduced-motion: reduce) {
+    * {
+      animation-duration: 0.01ms !important;
+      transition-duration: 0.01ms !important;
+    }
+  }
+
+  /* Safe area padding for notched devices */
+  body {
+    padding-left: env(safe-area-inset-left);
+    padding-right: env(safe-area-inset-right);
+  }
+}
