@@ -44,44 +44,57 @@ export const WaveSeparator = ({ className = "", flip = false }: { className?: st
   </svg>
 );
 
-/** Burning chef cap — logo accent next to the restaurant name */
+/** Burning chef hat (toque) — logo accent next to the restaurant name */
 export const FlameAccent = ({ className = "" }: { className?: string }) => (
   <svg
-    viewBox="0 0 24 28"
+    viewBox="0 0 28 34"
     fill="none"
     xmlns="http://www.w3.org/2000/svg"
-    className={`w-5 h-6 ${className}`}
+    className={`w-6 h-7 ${className}`}
     aria-hidden="true"
   >
-    {/* Chef cap body */}
+    {/* Tall toque body — the classic puffy chef hat */}
     <path
-      d="M5 18h14v3H5z"
+      d="M7 24c0-2 .5-6 1-9 .5-3 1.5-5 6-5s5.5 2 6 5c.5 3 1 7 1 9H7z"
       fill="currentColor"
-      opacity="0.85"
+      opacity="0.75"
     />
-    {/* Cap puff */}
+    {/* Puffy top of toque — rounded billowy crown */}
     <path
-      d="M4 18c-2 0-3.5-1.8-3.5-4 0-2 1.2-3.5 3-3.8C3.2 8.5 5 7 7.5 7c.8 0 1.5.2 2.1.5C10.5 5.8 11.8 5 13 5c1.5 0 2.8 1 3.5 2.5.5-.3 1.1-.5 1.7-.5 2.2 0 4 2 4 4.5 0 2.5-1.5 4.2-3.2 4.5"
+      d="M8 10c-1.5 0-3 1.2-3 3s1 2.5 2 3c-1.5.5-2.5 1.8-2.5 3.2 0 1.5 1 2.8 2.5 3.3V24h14v-1.5c1.5-.5 2.5-1.8 2.5-3.3 0-1.4-1-2.7-2.5-3.2 1-0.5 2-1.5 2-3s-1.5-3-3-3c-.8-2-3-3.5-6-3.5S8.8 8 8 10z"
       fill="currentColor"
-      opacity="0.7"
+      opacity="0.6"
     />
-    {/* Hatband */}
+    {/* Hatband at the base */}
     <path
-      d="M5 18h14v1H5z"
-      fill="currentColor"
-      opacity="0.5"
-    />
-    {/* Flame on top — left flicker */}
-    <path
-      d="M9 7C9 7 7.5 4.5 8.5 2c.5 1.5 1.5 2 2 2.5C11 3 10.5 1 11.5 0c0 1.5 1 3 .5 4.5C11.5 6 10 7 9 7z"
+      d="M6.5 24h15v2.5h-15z"
       fill="currentColor"
       opacity="0.9"
     />
-    {/* Flame on top — right flicker */}
+    {/* Band pleats/detail */}
     <path
-      d="M14 8c0 0-1-2-.5-3.5.3 1 1 1.5 1.3 2 .1-1-.2-2.5.5-3.5 0 1 .7 2 .3 3.2-.3 1-1 1.8-1.6 1.8z"
+      d="M9 24v2.5M12 24v2.5M15 24v2.5M18 24v2.5"
+      stroke="currentColor"
+      strokeWidth="0.4"
+      opacity="0.3"
+    />
+    {/* Center flame — main */}
+    <path
+      d="M14 10C14 10 11.5 6 13 2c.8 2 2 3 2.5 3.5.3-1.5-.3-3.5 1-5 0 2 1.2 3.5.5 5.5-.5 1.5-2 3.5-3 4z"
       fill="currentColor"
-      opacity="0.6"
+      opacity="0.95"
+    />
+    {/* Left small flame */}
+    <path
+      d="M10.5 11c0 0-1.2-2-.5-4 .3 1 .8 1.5 1 2 .1-.8 0-2 .6-3 0 .8.5 2 .2 3-.3.8-.8 1.5-1.3 2z"
+      fill="currentColor"
+      opacity="0.55"
+    />
+    {/* Right small flame */}
+    <path
+      d="M17 11.5c0 0-1-1.8-.4-3.5.3.8.7 1.2.9 1.6.1-.7 0-1.8.5-2.6 0 .7.4 1.7.2 2.6-.2.7-.7 1.3-1.2 1.9z"
+      fill="currentColor"
+      opacity="0.5"
     />
   </svg>
 );
