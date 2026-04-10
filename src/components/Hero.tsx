@@ -1,4 +1,5 @@
-import heroImage from "@/assets/hero-food.jpg";
+import heroDesktop from "@/assets/hero-desktop.jpg";
+import heroMobile from "@/assets/hero-mobile.jpg";
 import { useLanguage } from "@/i18n/LanguageContext";
 
 const Hero = () => {
@@ -6,12 +7,21 @@ const Hero = () => {
 
   return (
     <section className="relative h-[100svh] min-h-[600px] flex items-center justify-center overflow-hidden">
+      {/* Desktop hero */}
       <img
-        src={heroImage}
-        alt="Icelandic restaurant table with lamb, fish and candles"
-        className="absolute inset-0 w-full h-full object-cover object-center"
-        width={1080}
+        src={heroDesktop}
+        alt="Overhead view of Icelandic restaurant table with lamb, fish and candles"
+        className="absolute inset-0 w-full h-full object-cover object-center hidden md:block"
+        width={1920}
         height={1080}
+      />
+      {/* Mobile hero – people & faces */}
+      <img
+        src={heroMobile}
+        alt="Friends laughing together at a candlelit dinner table"
+        className="absolute inset-0 w-full h-full object-cover object-top md:hidden"
+        width={768}
+        height={1024}
       />
       <div className="absolute inset-0" style={{ background: "var(--hero-overlay)" }} />
 
