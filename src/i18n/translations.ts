@@ -284,6 +284,12 @@ const translations = {
   "cookies.marketing": { en: "Marketing", is: "Markaðssetning", pl: "Marketingowe" },
   "cookies.save": { en: "Save preferences", is: "Vista stillingar", pl: "Zapisz preferencje" },
   "cookies.back": { en: "Back", is: "Til baka", pl: "Wróć" },
+
+  // Demo modal
+  "demo.title": { en: "This is a demo", is: "Þetta er sýnishorn", pl: "To jest demo" },
+  "demo.desc": { en: "This feature would be fully functional on a real website. Want a professional website like this for your food business? We can build it for you!", is: "Þessi virkni væri fullkomlega virk á raunverulegri vefsíðu. Viltu faglega vefsíðu eins og þessa fyrir þinn veitingastað? Við getum smíðað hana fyrir þig!", pl: "Ta funkcja działałaby w pełni na prawdziwej stronie. Chcesz profesjonalną stronę jak ta dla swojego biznesu gastronomicznego? Możemy ją dla Ciebie zbudować!" },
+  "demo.cta": { en: "Get your website — from 19,900 kr.", is: "Fáðu þína vefsíðu — frá 19.900 kr.", pl: "Zamów swoją stronę — od 19 900 kr." },
+  "demo.close": { en: "Continue browsing", is: "Halda áfram", pl: "Kontynuuj przeglądanie" },
 } as const;
 
 export type TranslationKey = keyof typeof translations;

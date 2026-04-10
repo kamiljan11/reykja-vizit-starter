@@ -1,6 +1,7 @@
 import { Clock, MapPin, Phone } from "lucide-react";
 import { useLanguage } from "@/i18n/LanguageContext";
 import ScrollReveal from "./ScrollReveal";
+import { useDemo } from "./DemoModal";
 
 const Hours = () => {
   const { t } = useLanguage();
@@ -50,9 +51,9 @@ const Hours = () => {
                 <p>{t("hours.phone")}</p>
                 <p>eldhusid@eldhusid.is</p>
                 <p className="mt-3">
-                  <a href="tel:5551234" className="inline-block px-6 py-2 bg-accent text-accent-foreground font-semibold rounded-sm hover:opacity-90 transition-opacity">
+                  <button onClick={() => openDemo()} className="inline-block px-6 py-2 bg-accent text-accent-foreground font-semibold rounded-sm hover:opacity-90 transition-opacity">
                     {t("hours.callNow")}
-                  </a>
+                  </button>
                 </p>
               </div>
             </div>

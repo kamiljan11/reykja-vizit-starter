@@ -1,6 +1,7 @@
 import { Calendar, Clock } from "lucide-react";
 import { useLanguage } from "@/i18n/LanguageContext";
 import ScrollReveal from "./ScrollReveal";
+import { useDemo } from "./DemoModal";
 import MobileCarousel from "./MobileCarousel";
 import { useIsMobile } from "@/hooks/use-mobile";
 
@@ -61,9 +62,9 @@ const Events = () => {
         {event.price && (
           <span className="font-heading text-base md:text-lg font-bold text-accent">{event.price}</span>
         )}
-        <a href="#boka" className="ml-auto px-4 md:px-5 py-2 bg-accent text-accent-foreground font-body font-semibold text-xs md:text-sm rounded-sm hover:opacity-90 transition-opacity">
+        <button onClick={() => openDemo()} className="ml-auto px-4 md:px-5 py-2 bg-accent text-accent-foreground font-body font-semibold text-xs md:text-sm rounded-sm hover:opacity-90 transition-opacity">
           {t("events.book")}
-        </a>
+        </button>
       </div>
     </div>
   );
