@@ -33,7 +33,7 @@ const Faq = () => {
           <Accordion type="single" collapsible className="space-y-3">
             {faqs.map((faq, i) => (
               <AccordionItem key={i} value={`faq-${i}`} className="bg-card rounded-lg border border-border px-6">
-                <AccordionTrigger className="font-heading text-base font-semibold text-foreground hover:no-underline py-5">
+                <AccordionTrigger className="font-heading text-base font-semibold text-foreground hover:no-underline py-5 text-left">
                   {faq.q}
                 </AccordionTrigger>
                 <AccordionContent className="font-body text-muted-foreground text-sm leading-relaxed pb-5">
