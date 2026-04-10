@@ -3,6 +3,12 @@ import dishFish from "@/assets/dish-fish.jpg";
 import dishLamb from "@/assets/dish-lamb.jpg";
 import dishDessert from "@/assets/dish-dessert.jpg";
 import dishLambRack from "@/assets/dish-lamb-rack.jpg";
+import dishTrout from "@/assets/dish-trout.jpg";
+import dishBeetroot from "@/assets/dish-beetroot.jpg";
+import dishLavaCake from "@/assets/dish-lava-cake.jpg";
+import drinkBeer from "@/assets/drink-beer.jpg";
+import drinkCocktail from "@/assets/drink-cocktail.jpg";
+import drinkHotchoc from "@/assets/drink-hotchoc.jpg";
 import { useLanguage } from "@/i18n/LanguageContext";
 import ScrollReveal from "./ScrollReveal";
 
@@ -22,8 +28,8 @@ const Menu = () => {
   const menuData: Record<TabKey, { image?: string; name: string; description: string; price: string }[]> = {
     starters: [
       { image: dishFish, name: t("menu.s1.name"), description: t("menu.s1.desc"), price: "2.290 kr." },
-      { name: t("menu.s2.name"), description: t("menu.s2.desc"), price: "2.490 kr." },
-      { name: t("menu.s3.name"), description: t("menu.s3.desc"), price: "1.890 kr." },
+      { image: dishTrout, name: t("menu.s2.name"), description: t("menu.s2.desc"), price: "2.490 kr." },
+      { image: dishBeetroot, name: t("menu.s3.name"), description: t("menu.s3.desc"), price: "1.890 kr." },
     ],
     mains: [
       { image: dishFish, name: t("menu.item1.name"), description: t("menu.item1.desc"), price: "3.490 kr." },
@@ -32,15 +38,14 @@ const Menu = () => {
     ],
     desserts: [
       { image: dishDessert, name: t("menu.item3.name"), description: t("menu.item3.desc"), price: "1.790 kr." },
-      { name: t("menu.d2.name"), description: t("menu.d2.desc"), price: "1.990 kr." },
+      { image: dishLavaCake, name: t("menu.d2.name"), description: t("menu.d2.desc"), price: "1.990 kr." },
     ],
     drinks: [
-      { name: t("menu.dr1.name"), description: t("menu.dr1.desc"), price: "1.290 kr." },
-      { name: t("menu.dr2.name"), description: t("menu.dr2.desc"), price: "1.990 kr." },
-      { name: t("menu.dr3.name"), description: t("menu.dr3.desc"), price: "890 kr." },
+      { image: drinkBeer, name: t("menu.dr1.name"), description: t("menu.dr1.desc"), price: "1.290 kr." },
+      { image: drinkCocktail, name: t("menu.dr2.name"), description: t("menu.dr2.desc"), price: "1.990 kr." },
+      { image: drinkHotchoc, name: t("menu.dr3.name"), description: t("menu.dr3.desc"), price: "890 kr." },
     ],
   };
-
   const items = menuData[activeTab];
 
   return (
