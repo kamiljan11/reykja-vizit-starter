@@ -9,7 +9,7 @@ import Hours from "@/components/Hours";
 import Extras from "@/components/Extras";
 import Reservation from "@/components/Reservation";
 import Team from "@/components/Team";
-import Timeline from "@/components/Timeline";
+
 import Faq from "@/components/Faq";
 import Instagram from "@/components/Instagram";
 import Promo from "@/components/Promo";
@@ -29,7 +29,7 @@ const Index = () => {
       <Events />
       <Extras />
       <Reservation />
-      <Timeline />
+      
       <Faq />
       <Instagram />
       <Hours />
