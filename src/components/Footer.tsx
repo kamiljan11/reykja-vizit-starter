@@ -1,3 +1,4 @@
+import { Instagram } from "lucide-react";
 import { useLanguage } from "@/i18n/LanguageContext";
 
 const Footer = () => {
@@ -9,6 +10,10 @@ const Footer = () => {
         <div>
           <h3 className="font-heading text-2xl font-bold text-background mb-3">Eldhúsið</h3>
           <p className="font-body text-sm leading-relaxed">{t("footer.desc")}</p>
+          <a href="https://www.instagram.com/eldhusid_reykjavik" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 mt-4 text-background/70 hover:text-accent transition-colors">
+            <Instagram size={20} />
+            <span className="font-body text-sm">@eldhusid_reykjavik</span>
+          </a>
         </div>
         <div>
           <h4 className="font-heading text-lg font-semibold text-background mb-3">{t("footer.contact")}</h4>
