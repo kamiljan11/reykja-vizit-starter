@@ -45,8 +45,14 @@ const Hero = () => {
         </div>
       </div>
 
-      <div className="absolute bottom-8 left-1/2 -translate-x-1/2 animate-bounce">
-        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" className="text-primary-foreground/60">
+      {/* Scroll indicator with decorative lines */}
+      <div className="absolute bottom-8 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2">
+        <div className="flex items-center gap-3 text-primary-foreground/30">
+          <span className="block w-8 h-px bg-current" />
+          <span className="font-body text-[10px] tracking-[0.3em] uppercase">Scroll</span>
+          <span className="block w-8 h-px bg-current" />
+        </div>
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" className="text-primary-foreground/40 animate-bounce">
           <path d="M12 5v14M5 12l7 7 7-7" />
         </svg>
       </div>

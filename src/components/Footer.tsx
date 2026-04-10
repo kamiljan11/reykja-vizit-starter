@@ -1,14 +1,19 @@
 import { Instagram } from "lucide-react";
 import { useLanguage } from "@/i18n/LanguageContext";
+import { FlameAccent, WaveSeparator } from "./Decorations";
 
 const Footer = () => {
   const { t } = useLanguage();
 
   return (
-    <footer className="bg-foreground py-12 px-6">
+    <footer className="bg-foreground pt-0 pb-12 px-6">
+      <WaveSeparator className="text-background -mt-1 mb-8" />
       <div className="max-w-6xl mx-auto grid md:grid-cols-3 gap-8 text-background/80">
         <div>
-          <h3 className="font-heading text-2xl font-bold text-background mb-3">Eldhúsið</h3>
+          <h3 className="font-heading text-2xl font-bold text-background mb-3 flex items-center gap-1.5">
+            <FlameAccent className="text-accent" />
+            Eldhúsið
+          </h3>
           <p className="font-body text-sm leading-relaxed">{t("footer.desc")}</p>
           <a href="https://www.instagram.com/eldhusid_reykjavik" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 mt-4 text-background/70 hover:text-accent transition-colors">
             <Instagram size={20} />

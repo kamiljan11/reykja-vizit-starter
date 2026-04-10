@@ -4,6 +4,7 @@ import interior2 from "@/assets/interior-2.jpg";
 import interior3 from "@/assets/interior-3.jpg";
 import { useLanguage } from "@/i18n/LanguageContext";
 import ScrollReveal from "./ScrollReveal";
+import { KnotDivider } from "./Decorations";
 
 const images = [interiorImage, interior2, interior3];
 
@@ -26,6 +27,7 @@ const About = () => {
             <p className="font-body text-sm tracking-[0.2em] uppercase text-accent font-semibold">{t("about.label")}</p>
           </ScrollReveal>
           <ScrollReveal delay={0.1}>
+            <KnotDivider className="text-accent mb-3" />
             <h2 className="font-heading text-3xl md:text-4xl lg:text-5xl font-bold text-foreground">{t("about.title")}</h2>
           </ScrollReveal>
           <ScrollReveal delay={0.2}>
