@@ -292,7 +292,7 @@ const translations = {
   // Demo modal
   "demo.title": { en: "This is a demo", is: "Þetta er sýnishorn", pl: "To jest demo" },
   "demo.desc": { en: "This feature would be fully functional on a real website. Want a professional website like this for your food business? We can build it for you!", is: "Þessi virkni væri fullkomlega virk á raunverulegri vefsíðu. Viltu faglega vefsíðu eins og þessa fyrir þinn veitingastað? Við getum smíðað hana fyrir þig!", pl: "Ta funkcja działałaby w pełni na prawdziwej stronie. Chcesz profesjonalną stronę jak ta dla swojego biznesu gastronomicznego? Możemy ją dla Ciebie zbudować!" },
-  "demo.cta": { en: "Get your website — from 19,900 kr.", is: "Fáðu þína vefsíðu — frá 19.900 kr.", pl: "Zamów swoją stronę — od 19 900 kr." },
+  "demo.cta": { en: "Get your website — from 19,990 kr./month", is: "Fáðu þína vefsíðu — frá 19.990 kr./mán.", pl: "Zamów swoją stronę — od 19 990 kr./mies." },
   "demo.close": { en: "Continue browsing", is: "Halda áfram", pl: "Kontynuuj przeglądanie" },
 } as const;
 
