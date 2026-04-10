@@ -26,13 +26,9 @@ const Gallery = () => {
     { src: dishFish, alt: t("gallery.alt3") },
     { src: interior2, alt: t("gallery.alt2") },
     { src: dishTrout, alt: t("gallery.alt3") },
-    { src: dishBeetroot, alt: t("gallery.alt5") },
-    { src: interior3, alt: t("gallery.alt2") },
     { src: dishLavaCake, alt: t("gallery.alt5") },
     { src: dishLamb, alt: t("gallery.alt4") },
     { src: drinkCocktail, alt: t("gallery.alt5") },
-    { src: dishDessert, alt: t("gallery.alt5") },
-    { src: drinkHotchoc, alt: t("gallery.alt5") },
   ];
 
   return (
