@@ -12,28 +12,24 @@ import Reservation from "@/components/Reservation";
 import Promo from "@/components/Promo";
 import Footer from "@/components/Footer";
 import CookieBanner from "@/components/CookieBanner";
-import { DemoProvider } from "@/components/DemoModal";
 
 const Index = () => {
   return (
-    <DemoProvider>
-      <div className="min-h-screen">
-        <Navbar />
-        <Hero />
-        <About />
-        <Menu />
-        <Reviews />
-        <Gallery />
-        <Events />
+    <div className="min-h-screen">
+      <Navbar />
+      <Hero />
+      <About />
+      <Menu />
+      <Reviews />
+      <Gallery />
+      <Events />
       <Extras />
       <Reservation />
-        <Hours />
-        
-        <Promo />
-        <Footer />
-        <CookieBanner />
-      </div>
-    </DemoProvider>
+      <Hours />
+      <Promo />
+      <Footer />
+      <CookieBanner />
+    </div>
   );
 };
 
