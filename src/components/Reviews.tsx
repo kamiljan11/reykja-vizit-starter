@@ -48,7 +48,7 @@ const Reviews = () => {
   );
 
   return (
-    <section className="py-16 md:py-24 px-6">
+    <section id="umsagnir" className="py-16 md:py-24 px-6">
       <div className="max-w-6xl mx-auto">
         <ScrollReveal>
           <div className="text-center mb-10 md:mb-16">
