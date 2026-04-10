@@ -33,7 +33,7 @@ const Menu = () => {
       { image: dishBeetroot, name: t("menu.s3.name"), description: t("menu.s3.desc"), price: "1.890 kr." },
     ],
     mains: [
-      { image: dishFish, name: t("menu.item1.name"), description: t("menu.item1.desc"), price: "3.490 kr." },
+      { image: dishChar, name: t("menu.item1.name"), description: t("menu.item1.desc"), price: "3.490 kr." },
       { image: dishLamb, name: t("menu.item2.name"), description: t("menu.item2.desc"), price: "2.290 kr." },
       { image: dishLambRack, name: t("menu.m3.name"), description: t("menu.m3.desc"), price: "4.890 kr." },
     ],
