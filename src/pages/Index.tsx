@@ -12,6 +12,7 @@ import Reservation from "@/components/Reservation";
 import Cta from "@/components/Cta";
 import Promo from "@/components/Promo";
 import Footer from "@/components/Footer";
+import CookieBanner from "@/components/CookieBanner";
 
 const Index = () => {
   return (
@@ -30,6 +31,7 @@ const Index = () => {
       <Cta />
       <Promo />
       <Footer />
+      <CookieBanner />
     </div>
   );
 };

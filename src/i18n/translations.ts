@@ -271,6 +271,19 @@ const translations = {
   "footer.openingHours": { en: "Opening hours", is: "Opnunartímar", pl: "Godziny otwarcia" },
   "footer.sun": { en: "Sun: 12:00 – 20:00", is: "Sun: 12:00 – 20:00", pl: "Ndz: 12:00 – 20:00" },
   "footer.rights": { en: "All rights reserved.", is: "Öll réttindi áskilin.", pl: "Wszelkie prawa zastrzeżone." },
+
+  // Cookies
+  "cookies.title": { en: "We use cookies", is: "Við notum vefkökur", pl: "Używamy ciasteczek" },
+  "cookies.desc": { en: "We use cookies to enhance your experience. By continuing, you agree to our cookie policy.", is: "Við notum vefkökur til að bæta upplifun þína. Með því að halda áfram samþykkir þú vefkökustefnu okkar.", pl: "Używamy ciasteczek, aby poprawić Twoje doświadczenia. Kontynuując, zgadzasz się na naszą politykę cookies." },
+  "cookies.accept": { en: "Accept all", is: "Samþykkja allt", pl: "Akceptuj wszystkie" },
+  "cookies.reject": { en: "Reject all", is: "Hafna öllu", pl: "Odrzuć wszystkie" },
+  "cookies.settings": { en: "Settings", is: "Stillingar", pl: "Ustawienia" },
+  "cookies.settingsTitle": { en: "Cookie preferences", is: "Vefkökustillingar", pl: "Preferencje cookies" },
+  "cookies.necessary": { en: "Necessary", is: "Nauðsynlegar", pl: "Niezbędne" },
+  "cookies.analytics": { en: "Analytics", is: "Greining", pl: "Analityczne" },
+  "cookies.marketing": { en: "Marketing", is: "Markaðssetning", pl: "Marketingowe" },
+  "cookies.save": { en: "Save preferences", is: "Vista stillingar", pl: "Zapisz preferencje" },
+  "cookies.back": { en: "Back", is: "Til baka", pl: "Wróć" },
 } as const;
 
 export type TranslationKey = keyof typeof translations;
