@@ -114,6 +114,7 @@ const translations = {
   "gallery.alt3": { en: "Arctic char dish", is: "Bleikjuréttur", pl: "Danie z gólca" },
   "gallery.alt4": { en: "Lamb soup", is: "Lambakjötsúpa", pl: "Zupa z jagnięciny" },
   "gallery.alt5": { en: "Skyr dessert", is: "Skyreftirréttur", pl: "Deser skyr" },
+  "gallery.follow": { en: "Follow", is: "Fylgja", pl: "Obserwuj" },
 
   // Reviews
   "reviews.label": { en: "Reviews", is: "Umsagnir", pl: "Opinie" },
