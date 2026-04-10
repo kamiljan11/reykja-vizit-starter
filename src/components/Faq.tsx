@@ -1,5 +1,6 @@
 import { useLanguage } from "@/i18n/LanguageContext";
 import ScrollReveal from "./ScrollReveal";
+import { DotGridBackground } from "./Decorations";
 import {
   Accordion,
   AccordionContent,
@@ -20,8 +21,9 @@ const Faq = () => {
   ];
 
   return (
-    <section className="py-16 md:py-24 px-6">
-      <div className="max-w-3xl mx-auto">
+    <section className="py-16 md:py-24 px-6 relative overflow-hidden">
+      <DotGridBackground className="text-foreground" />
+      <div className="max-w-3xl mx-auto relative z-10">
         <ScrollReveal>
           <div className="text-center mb-12">
             <p className="font-body text-sm tracking-[0.2em] uppercase text-accent font-semibold mb-3">{t("faq.label")}</p>

@@ -5,6 +5,7 @@ import interior3 from "@/assets/interior-3.jpg";
 import { useLanguage } from "@/i18n/LanguageContext";
 import ScrollReveal from "./ScrollReveal";
 import { KnotDivider } from "./Decorations";
+import { TopoBackground } from "./Decorations";
 
 const images = [interiorImage, interior2, interior3];
 
@@ -20,8 +21,9 @@ const About = () => {
   }, []);
 
   return (
-    <section id="um-okkur" className="py-16 md:py-24 px-6">
-      <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-12 items-center">
+    <section id="um-okkur" className="py-16 md:py-24 px-6 relative overflow-hidden">
+      <TopoBackground className="text-foreground" />
+      <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-12 items-center relative z-10">
         <div className="space-y-6">
           <ScrollReveal>
             <p className="font-body text-sm tracking-[0.2em] uppercase text-accent font-semibold">{t("about.label")}</p>

@@ -3,7 +3,7 @@ import { X, Instagram } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
 import { useLanguage } from "@/i18n/LanguageContext";
 import ScrollReveal from "./ScrollReveal";
-import { KnotDivider } from "./Decorations";
+import { KnotDivider, NordicPatternBackground } from "./Decorations";
 import dishFish from "@/assets/dish-fish.jpg";
 import dishLamb from "@/assets/dish-lamb.jpg";
 import dishDessert from "@/assets/dish-dessert.jpg";
@@ -33,8 +33,9 @@ const Gallery = () => {
   ];
 
   return (
-    <section id="myndir" className="py-16 md:py-24 px-6 bg-secondary">
-      <div className="max-w-6xl mx-auto">
+    <section id="myndir" className="py-16 md:py-24 px-6 bg-secondary relative overflow-hidden">
+      <NordicPatternBackground className="text-foreground" />
+      <div className="max-w-6xl mx-auto relative z-10">
         <ScrollReveal>
           <div className="text-center mb-12">
             <p className="font-body text-sm tracking-[0.2em] uppercase text-accent font-semibold mb-3">{t("gallery.label")}</p>
