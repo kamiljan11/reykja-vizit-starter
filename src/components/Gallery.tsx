@@ -49,8 +49,31 @@ const Gallery = () => {
     <section id="myndir" className="py-16 md:py-24 px-6 bg-secondary">
       <div className="max-w-2xl mx-auto">
         {/* Instagram-style profile header */}
+        {/* Section header */}
         <ScrollReveal>
+          <div className="text-center mb-8">
+            <p className="font-body text-sm tracking-[0.2em] uppercase text-accent font-semibold mb-3">{t("gallery.label")}</p>
+            <h2 className="font-heading text-3xl md:text-4xl lg:text-5xl font-bold text-foreground mb-3 md:mb-4">{t("gallery.title")}</h2>
+          </div>
+        </ScrollReveal>
+
+        <ScrollReveal delay={0.05}>
           <div className="bg-card rounded-t-xl border border-border p-6 mb-0">
+            {/* Instagram logo header */}
+            <div className="flex items-center justify-between mb-5 pb-4 border-b border-border">
+              <svg className="h-7" viewBox="0 0 1200 340" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                <title>Instagram</title>
+                <text x="0" y="280" className="font-heading" style={{ fontSize: '320px', fontFamily: 'serif', fontStyle: 'italic' }}>Instagram</text>
+              </svg>
+              <a
+                href="https://www.instagram.com/eldhusid_reykjavik"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="font-body text-xs font-semibold text-accent hover:text-accent/80 transition-colors border border-accent rounded-md px-3 py-1.5"
+              >
+                {t("gallery.follow")}
+              </a>
+            </div>
             <div className="flex items-center gap-4 mb-4">
               <div className="w-16 h-16 md:w-20 md:h-20 rounded-full bg-gradient-to-br from-accent to-orange-400 p-[3px]">
                 <div className="w-full h-full rounded-full bg-card flex items-center justify-center overflow-hidden">
