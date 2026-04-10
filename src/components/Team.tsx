@@ -24,14 +24,14 @@ const Team = () => {
           </div>
         </ScrollReveal>
 
-        <div className="grid md:grid-cols-3 gap-8">
+        <div className="grid md:grid-cols-3 gap-8 items-stretch">
           {members.map((m, i) => (
-            <ScrollReveal key={i} delay={i * 0.15}>
-              <div className="bg-card rounded-lg overflow-hidden shadow-md hover:shadow-xl transition-shadow duration-300 group">
+            <ScrollReveal key={i} delay={i * 0.15} className="h-full">
+              <div className="bg-card rounded-lg overflow-hidden shadow-md hover:shadow-xl transition-shadow duration-300 group h-full flex flex-col">
                 <div className="overflow-hidden aspect-[3/4]">
                   <img src={m.image} alt={m.name} className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy" width={800} height={1024} />
                 </div>
-                <div className="p-6 text-center">
+                <div className="p-6 text-center flex-1 flex flex-col justify-center">
                   <h3 className="font-heading text-xl font-semibold text-foreground mb-1">{m.name}</h3>
                   <p className="font-body text-accent text-sm font-semibold mb-2">{m.role}</p>
                   <p className="font-body text-muted-foreground text-sm leading-relaxed">{m.desc}</p>
