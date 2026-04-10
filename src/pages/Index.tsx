@@ -30,7 +30,7 @@ const Index = () => {
       <Reservation />
       
       <Faq />
-      <Instagram />
+      
       <Hours />
       <Promo />
       <Footer />
