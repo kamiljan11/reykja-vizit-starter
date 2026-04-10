@@ -101,7 +101,7 @@ const Menu = () => {
         <ScrollReveal delay={0.3}>
           <div className="text-center mt-12">
             <a
-              href="#borda"
+              href="#boka"
               className="inline-block px-8 py-3 border-2 border-primary text-primary font-body font-semibold rounded-sm hover:bg-primary hover:text-primary-foreground transition-colors"
             >
               {t("menu.seeAll")}
