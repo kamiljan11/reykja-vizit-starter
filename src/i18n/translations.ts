@@ -99,7 +99,7 @@ const translations = {
   "menu.dr3.name": { en: "Hot chocolate", is: "Heitt kakó", pl: "Gorąca czekolada" },
   "menu.dr3.desc": { en: "Rich Icelandic hot chocolate with whipped cream.", is: "Ríkt íslenskt kakó með þeyttum rjóma.", pl: "Gęsta islandzka gorąca czekolada z bitą śmietaną." },
 
-  "menu.seeAll": { en: "See full menu", is: "Sjá allan matseðilinn", pl: "Zobacz pełne menu" },
+  "menu.seeAll": { en: "Book a table", is: "Bóka borð", pl: "Zarezerwuj stolik" },
 
   // Gallery
   "gallery.label": { en: "Gallery", is: "Myndir", pl: "Galeria" },
