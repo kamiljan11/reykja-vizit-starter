@@ -11,7 +11,6 @@ import Reservation from "@/components/Reservation";
 import Team from "@/components/Team";
 
 import Faq from "@/components/Faq";
-import Instagram from "@/components/Instagram";
 import Promo from "@/components/Promo";
 import Footer from "@/components/Footer";
 import CookieBanner from "@/components/CookieBanner";
@@ -31,7 +30,7 @@ const Index = () => {
       <Reservation />
       
       <Faq />
-      <Instagram />
+      
       <Hours />
       <Promo />
       <Footer />
