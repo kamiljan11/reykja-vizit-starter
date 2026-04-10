@@ -17,28 +17,28 @@ const translations = {
   "nav.book": { en: "Book a table", is: "Bóka borð", pl: "Zarezerwuj stolik" },
 
   // Hero
-  "hero.tagline": { en: "Reykjavík · Since 2018", is: "Reykjavík · Frá 2018", pl: "Reykjavík · Od 2018" },
-  "hero.title": { en: "Eldhúsið", is: "Eldhúsið", pl: "Eldhúsið" },
+  "hero.tagline": { en: "Reykjavík · Family-run since 2018", is: "Reykjavík · Fjölskyldurekið frá 2018", pl: "Reykjavík · Rodzinne od 2018" },
+  "hero.title": { en: "Velkomin heim", is: "Velkomin heim", pl: "Velkomin heim" },
   "hero.subtitle": {
-    en: "Honest cooking with Icelandic ingredients — simple, good and made from the heart.",
-    is: "Heiðarleg matargerð með íslensku hráefni — einfalt, gott og gert af hjarta.",
-    pl: "Uczciwa kuchnia z islandzkich składników — prosto, smacznie i z serca.",
+    en: "Where every guest is family. Honest home cooking with Icelandic heart — come as you are.",
+    is: "Þar sem allir gestir eru fjölskylda. Heiðarleg heimaelduð matargerð — komdu eins og þú ert.",
+    pl: "Gdzie każdy gość jest rodziną. Uczciwa domowa kuchnia z islandzkim sercem — przyjdź taki jaki jesteś.",
   },
   "hero.cta.menu": { en: "See the menu", is: "Sjá matseðil", pl: "Zobacz menu" },
   "hero.cta.book": { en: "Book a table", is: "Bóka borð", pl: "Zarezerwuj stolik" },
 
   // About
-  "about.label": { en: "About us", is: "Um okkur", pl: "O nas" },
-  "about.title": { en: "Simple & good — just like home", is: "Einfalt & gott — eins og heima", pl: "Prosto i smacznie — jak w domu" },
+  "about.label": { en: "Our story", is: "Sagan okkar", pl: "Nasza historia" },
+  "about.title": { en: "A kitchen built on family", is: "Eldhús byggt á fjölskyldu", pl: "Kuchnia zbudowana na rodzinie" },
   "about.p1": {
-    en: "Eldhúsið is a family restaurant in the heart of Reykjavík. We believe in simple cooking where the ingredients speak for themselves. Our Icelandic lamb, fresh fish and homemade soups are prepared with love and time.",
-    is: "Eldhúsið er fjölskylduveitingastaður í hjarta Reykjavíkur. Við trúum á einfalda matargerð þar sem hráefnin fá að njóta sín. Íslensku lambalærin okkar, ferskur fiskur og heimilegar súpur eru elduð með kærleika og tíma.",
-    pl: "Eldhúsið to rodzinna restauracja w sercu Reykjavíku. Wierzymy w prostą kuchnię, w której składniki mówią same za siebie. Nasza islandzka jagnięcina, świeże ryby i domowe zupy są przygotowywane z miłością i czasem.",
+    en: "We're Jón and Helga, and Eldhúsið is our home — literally. What started as Sunday dinners for friends became a restaurant where everyone feels like family. Our kids grew up here, and so did our recipes.",
+    is: "Við erum Jón og Helga, og Eldhúsið er heimili okkar — bókstaflega. Það sem byrjaði sem sunnudagskvöldverðir fyrir vini varð að veitingastað þar sem allir líða eins og fjölskylda.",
+    pl: "Jesteśmy Jón i Helga, a Eldhúsið to nasz dom — dosłownie. To co zaczęło się jako niedzielne kolacje dla przyjaciół, stało się restauracją, w której każdy czuje się jak rodzina.",
   },
   "about.p2": {
-    en: "The place is cosy, warm and perfect for dinner with the family, a date or just good food with good people.",
-    is: "Staðurinn er notalegur, hlýr og fullkominn fyrir kvöldverð með fjölskyldunni, stefnumót eða bara góðan mat með góðu fólki.",
-    pl: "Miejsce jest przytulne, ciepłe i idealne na kolację z rodziną, randkę lub po prostu dobre jedzenie w dobrym towarzystwie.",
+    en: "We cook what we love to eat — Icelandic lamb stew, fresh catch from the harbour, grandma's skyr dessert. No pretension, just warmth, candles, and a table big enough for everyone.",
+    is: "Við eldumum það sem okkur finnst gott — íslenskt kjötsúpa, ferskur fiskur úr höfninni, skyrteftirréttur ömmu. Engin tilgerð, bara hlýja, kerti og borð sem er nógu stórt fyrir alla.",
+    pl: "Gotujemy to, co sami uwielbiamy jeść — islandzki gulasz jagnięcy, świeży połów z portu, deser skyr babci. Bez pretensji, tylko ciepło, świece i stół wystarczająco duży dla wszystkich.",
   },
   "about.stat.years": { en: "years experience", is: "ára reynsla", pl: "lat doświadczenia" },
   "about.stat.local": { en: "Icelandic ingredients", is: "íslenskt hráefni", pl: "islandzkie składniki" },
