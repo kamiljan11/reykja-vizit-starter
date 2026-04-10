@@ -1,9 +1,11 @@
 import { Gift } from "lucide-react";
 import { useLanguage } from "@/i18n/LanguageContext";
 import ScrollReveal from "./ScrollReveal";
+import { useDemo } from "./DemoModal";
 
 const GiftCards = () => {
   const { t } = useLanguage();
+  const { openDemo } = useDemo();
 
   return (
     <section className="py-14 md:py-20 px-6 bg-secondary">
@@ -28,12 +30,12 @@ const GiftCards = () => {
                   </span>
                 ))}
               </div>
-              <a
-                href="#"
+              <button
+                onClick={() => openDemo()}
                 className="inline-block px-8 py-3 bg-accent text-accent-foreground font-body font-semibold rounded-sm hover:opacity-90 transition-opacity text-center"
               >
                 {t("giftcard.cta")}
-              </a>
+              </button>
             </div>
             <div className="relative bg-primary flex items-center justify-center p-12">
               <div className="text-center">

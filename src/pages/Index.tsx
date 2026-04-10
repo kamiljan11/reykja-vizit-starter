@@ -13,26 +13,29 @@ import Cta from "@/components/Cta";
 import Promo from "@/components/Promo";
 import Footer from "@/components/Footer";
 import CookieBanner from "@/components/CookieBanner";
+import { DemoProvider } from "@/components/DemoModal";
 
 const Index = () => {
   return (
-    <div className="min-h-screen">
-      <Navbar />
-      <Hero />
-      <About />
-      <Menu />
-      <Reviews />
-      <Gallery />
-      <Events />
-      <Reservation />
-      <TakeAway />
-      <GiftCards />
-      <Hours />
-      <Cta />
-      <Promo />
-      <Footer />
-      <CookieBanner />
-    </div>
+    <DemoProvider>
+      <div className="min-h-screen">
+        <Navbar />
+        <Hero />
+        <About />
+        <Menu />
+        <Reviews />
+        <Gallery />
+        <Events />
+        <Reservation />
+        <TakeAway />
+        <GiftCards />
+        <Hours />
+        <Cta />
+        <Promo />
+        <Footer />
+        <CookieBanner />
+      </div>
+    </DemoProvider>
   );
 };
 

@@ -3,11 +3,13 @@ import heroImage from "@/assets/hero-food.jpg";
 import { CalendarIcon, Users, ChevronLeft, ChevronRight, CheckCircle, Share2 } from "lucide-react";
 import { useLanguage } from "@/i18n/LanguageContext";
 import ScrollReveal from "./ScrollReveal";
+import { useDemo } from "./DemoModal";
 
 type Step = "when" | "guests" | "book";
 
 const Reservation = () => {
   const { t, lang } = useLanguage();
+  const { openDemo } = useDemo();
   const [step, setStep] = useState<Step>("when");
   const [selectedDate, setSelectedDate] = useState<Date | null>(null);
   const [selectedTime, setSelectedTime] = useState<string | null>(null);
@@ -71,7 +73,7 @@ const Reservation = () => {
   };
 
   const handleBook = () => {
-    setSubmitted(true);
+    openDemo();
     setTimeout(() => {
       setSubmitted(false);
       setStep("when");

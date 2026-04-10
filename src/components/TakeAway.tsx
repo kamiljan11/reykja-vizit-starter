@@ -1,9 +1,11 @@
 import { ShoppingBag, Clock, Percent } from "lucide-react";
 import { useLanguage } from "@/i18n/LanguageContext";
 import ScrollReveal from "./ScrollReveal";
+import { useDemo } from "./DemoModal";
 
 const TakeAway = () => {
   const { t } = useLanguage();
+  const { openDemo } = useDemo();
 
   return (
     <section className="py-14 md:py-20 px-6">
@@ -31,12 +33,12 @@ const TakeAway = () => {
                   <span className="font-body text-sm">{t("takeaway.pickup")}</span>
                 </div>
               </div>
-              <a
-                href="tel:5551234"
+              <button
+                onClick={() => openDemo()}
                 className="inline-block px-8 py-3 bg-foreground text-background font-body font-bold rounded-sm hover:opacity-90 transition-opacity"
               >
                 {t("takeaway.cta")}
-              </a>
+              </button>
             </div>
             <div className="md:col-span-2 bg-foreground/10 flex items-center justify-center p-10">
               <div className="text-center">
