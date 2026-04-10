@@ -12,6 +12,8 @@ const translations = {
   "nav.menu": { en: "Menu", is: "Matseðill", pl: "Menu" },
   "nav.gallery": { en: "Gallery", is: "Myndir", pl: "Galeria" },
   "nav.hours": { en: "Opening hours", is: "Opnunartímar", pl: "Godziny otwarcia" },
+  "nav.events": { en: "Events", is: "Viðburðir", pl: "Wydarzenia" },
+  "nav.reviews": { en: "Reviews", is: "Umsagnir", pl: "Opinie" },
   "nav.book": { en: "Book a table", is: "Bóka borð", pl: "Zarezerwuj stolik" },
 
   // Hero

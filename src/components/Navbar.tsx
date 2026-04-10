@@ -18,6 +18,8 @@ const Navbar = () => {
     { href: "#um-okkur", label: t("nav.about") },
     { href: "#matseðill", label: t("nav.menu") },
     { href: "#myndir", label: t("nav.gallery") },
+    { href: "#vidburdir", label: t("nav.events") },
+    { href: "#umsagnir", label: t("nav.reviews") },
     { href: "#borda", label: t("nav.hours") },
   ];
 
