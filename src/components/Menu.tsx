@@ -12,7 +12,7 @@ import drinkCocktail from "@/assets/drink-cocktail.jpg";
 import drinkHotchoc from "@/assets/drink-hotchoc.jpg";
 import { useLanguage } from "@/i18n/LanguageContext";
 import ScrollReveal from "./ScrollReveal";
-import { DiamondDots, LeafSprig } from "./Decorations";
+import { DiamondDots, LeafSprig, DotGridBackground } from "./Decorations";
 
 type TabKey = "starters" | "mains" | "desserts" | "drinks";
 
@@ -51,8 +51,9 @@ const Menu = () => {
   const items = menuData[activeTab];
 
   return (
-    <section id="matseðill" className="py-16 md:py-24 px-6 bg-secondary">
-      <div className="max-w-6xl mx-auto">
+    <section id="matseðill" className="py-16 md:py-24 px-6 bg-secondary relative overflow-hidden">
+      <DotGridBackground className="text-foreground" />
+      <div className="max-w-6xl mx-auto relative z-10">
         <ScrollReveal>
           <div className="text-center mb-12">
             <p className="font-body text-sm tracking-[0.2em] uppercase text-accent font-semibold mb-3">{t("menu.label")}</p>

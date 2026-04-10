@@ -125,3 +125,90 @@ export const CornerFlourish = ({ className = "" }: { className?: string }) => (
     <circle cx="2" cy="38" r="1.5" fill="currentColor" opacity="0.2" />
   </svg>
 );
+
+/** Subtle topographic/contour lines background — for light sections */
+export const TopoBackground = ({ className = "" }: { className?: string }) => (
+  <svg
+    className={`absolute inset-0 w-full h-full pointer-events-none ${className}`}
+    xmlns="http://www.w3.org/2000/svg"
+    aria-hidden="true"
+  >
+    <defs>
+      <pattern id="topo" x="0" y="0" width="200" height="200" patternUnits="userSpaceOnUse">
+        <path d="M20 100c30-20 60 10 90-5s50-30 70-10" stroke="currentColor" strokeWidth="0.5" fill="none" opacity="0.06" />
+        <path d="M10 140c40-15 50 20 80 5s60-25 80-5" stroke="currentColor" strokeWidth="0.5" fill="none" opacity="0.04" />
+        <path d="M30 60c25-10 45 15 70 0s55-20 70 5" stroke="currentColor" strokeWidth="0.5" fill="none" opacity="0.05" />
+        <path d="M0 30c35-5 55 25 90 10s45-15 80-5" stroke="currentColor" strokeWidth="0.4" fill="none" opacity="0.03" />
+      </pattern>
+    </defs>
+    <rect width="100%" height="100%" fill="url(#topo)" />
+  </svg>
+);
+
+/** Dot grid background — for card-heavy sections */
+export const DotGridBackground = ({ className = "" }: { className?: string }) => (
+  <svg
+    className={`absolute inset-0 w-full h-full pointer-events-none ${className}`}
+    xmlns="http://www.w3.org/2000/svg"
+    aria-hidden="true"
+  >
+    <defs>
+      <pattern id="dotgrid" x="0" y="0" width="32" height="32" patternUnits="userSpaceOnUse">
+        <circle cx="16" cy="16" r="1" fill="currentColor" opacity="0.07" />
+      </pattern>
+    </defs>
+    <rect width="100%" height="100%" fill="url(#dotgrid)" />
+  </svg>
+);
+
+/** Cross-hatch texture — for dark sections like reservation/promo */
+export const CrossHatchBackground = ({ className = "" }: { className?: string }) => (
+  <svg
+    className={`absolute inset-0 w-full h-full pointer-events-none ${className}`}
+    xmlns="http://www.w3.org/2000/svg"
+    aria-hidden="true"
+  >
+    <defs>
+      <pattern id="crosshatch" x="0" y="0" width="20" height="20" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+        <line x1="0" y1="0" x2="0" y2="20" stroke="currentColor" strokeWidth="0.3" opacity="0.06" />
+      </pattern>
+    </defs>
+    <rect width="100%" height="100%" fill="url(#crosshatch)" />
+  </svg>
+);
+
+/** Organic grain texture — subtle noise-like pattern */
+export const GrainBackground = ({ className = "" }: { className?: string }) => (
+  <svg
+    className={`absolute inset-0 w-full h-full pointer-events-none ${className}`}
+    xmlns="http://www.w3.org/2000/svg"
+    aria-hidden="true"
+  >
+    <defs>
+      <filter id="grain">
+        <feTurbulence type="fractalNoise" baseFrequency="0.65" numOctaves="3" stitchTiles="stitch" />
+        <feColorMatrix type="saturate" values="0" />
+      </filter>
+    </defs>
+    <rect width="100%" height="100%" filter="url(#grain)" opacity="0.03" />
+  </svg>
+);
+
+/** Nordic diamond pattern — for accent sections */
+export const NordicPatternBackground = ({ className = "" }: { className?: string }) => (
+  <svg
+    className={`absolute inset-0 w-full h-full pointer-events-none ${className}`}
+    xmlns="http://www.w3.org/2000/svg"
+    aria-hidden="true"
+  >
+    <defs>
+      <pattern id="nordic" x="0" y="0" width="48" height="48" patternUnits="userSpaceOnUse">
+        <path d="M24 4l8 8-8 8-8-8z" stroke="currentColor" strokeWidth="0.5" fill="none" opacity="0.05" />
+        <path d="M0 28l8 8-8 8" stroke="currentColor" strokeWidth="0.5" fill="none" opacity="0.04" />
+        <path d="M48 28l-8 8 8 8" stroke="currentColor" strokeWidth="0.5" fill="none" opacity="0.04" />
+        <circle cx="24" cy="12" r="1" fill="currentColor" opacity="0.04" />
+      </pattern>
+    </defs>
+    <rect width="100%" height="100%" fill="url(#nordic)" />
+  </svg>
+);

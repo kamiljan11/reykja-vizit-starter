@@ -1,5 +1,6 @@
 import { Globe, Camera, BarChart3, Zap, ArrowRight } from "lucide-react";
 import { useLanguage } from "@/i18n/LanguageContext";
+import { CrossHatchBackground } from "./Decorations";
 
 const Promo = () => {
   const { t } = useLanguage();
@@ -12,8 +13,9 @@ const Promo = () => {
   ];
 
   return (
-    <section className="py-16 md:py-24 px-6 bg-foreground">
-      <div className="max-w-4xl mx-auto text-center">
+    <section className="py-16 md:py-24 px-6 bg-foreground relative overflow-hidden">
+      <CrossHatchBackground className="text-background" />
+      <div className="max-w-4xl mx-auto text-center relative z-10">
         <p className="font-body text-xs tracking-[0.35em] uppercase text-accent mb-6">
           {t("promo.tag")}
         </p>

@@ -1,6 +1,7 @@
 import { useState, useMemo } from "react";
 import heroImage from "@/assets/hero-food.jpg";
 import { CalendarIcon, Users, ChevronLeft, ChevronRight, CheckCircle, Share2 } from "lucide-react";
+import { GrainBackground } from "./Decorations";
 import { useLanguage } from "@/i18n/LanguageContext";
 import ScrollReveal from "./ScrollReveal";
 import { useDemo } from "./DemoModal";
@@ -93,8 +94,9 @@ const Reservation = () => {
   };
 
   return (
-    <section id="boka" className="py-16 md:py-24 px-4 md:px-6 bg-primary relative">
-      <div className="max-w-5xl mx-auto">
+    <section id="boka" className="py-16 md:py-24 px-4 md:px-6 bg-primary relative overflow-hidden">
+      <GrainBackground className="text-primary-foreground" />
+      <div className="max-w-5xl mx-auto relative z-10">
         <ScrollReveal>
           <div className="text-center mb-8 md:mb-12">
             <p className="font-body text-xs md:text-sm tracking-[0.2em] uppercase text-accent font-semibold mb-2 md:mb-3">

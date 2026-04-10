@@ -1,5 +1,6 @@
 import { Calendar, Clock } from "lucide-react";
 import { useLanguage } from "@/i18n/LanguageContext";
+import { NordicPatternBackground } from "./Decorations";
 import ScrollReveal from "./ScrollReveal";
 import { useDemo } from "./DemoModal";
 import MobileCarousel from "./MobileCarousel";
@@ -71,8 +72,9 @@ const Events = () => {
   );
 
   return (
-    <section id="vidburdir" className="py-16 md:py-24 px-6">
-      <div className="max-w-6xl mx-auto">
+    <section id="vidburdir" className="py-16 md:py-24 px-6 relative overflow-hidden">
+      <NordicPatternBackground className="text-foreground" />
+      <div className="max-w-6xl mx-auto relative z-10">
         <ScrollReveal>
           <div className="text-center mb-10 md:mb-16">
             <p className="font-body text-xs md:text-sm tracking-[0.2em] uppercase text-accent font-semibold mb-2 md:mb-3">
