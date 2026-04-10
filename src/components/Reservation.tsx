@@ -94,12 +94,6 @@ const Reservation = () => {
 
   return (
     <section id="boka" className="py-16 md:py-24 px-4 md:px-6 bg-primary relative">
-      {/* DEMO banner */}
-      <div className="absolute top-6 left-1/2 -translate-x-1/2 z-10">
-        <span className="inline-block px-6 py-1.5 bg-accent text-accent-foreground font-body text-xs font-bold tracking-[0.2em] uppercase rounded-full shadow-lg">
-          Demo — Sýnidæmi
-        </span>
-      </div>
       <div className="max-w-5xl mx-auto">
         <ScrollReveal>
           <div className="text-center mb-8 md:mb-12">
