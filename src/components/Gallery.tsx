@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { X, Heart, MessageCircle, Send, Bookmark, Grid3X3, Camera } from "lucide-react";
+import { X, Instagram } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
 import { useLanguage } from "@/i18n/LanguageContext";
 import ScrollReveal from "./ScrollReveal";
@@ -11,139 +11,79 @@ import dishTrout from "@/assets/dish-trout.jpg";
 import dishBeetroot from "@/assets/dish-beetroot.jpg";
 import dishLavaCake from "@/assets/dish-lava-cake.jpg";
 import drinkCocktail from "@/assets/drink-cocktail.jpg";
-import drinkHotchoc from "@/assets/drink-hotchoc.jpg";
 import interiorImage from "@/assets/interior.jpg";
 import interior2 from "@/assets/interior-2.jpg";
 import interior3 from "@/assets/interior-3.jpg";
+import drinkHotchoc from "@/assets/drink-hotchoc.jpg";
 
 const Gallery = () => {
   const { t } = useLanguage();
   const [selected, setSelected] = useState<number | null>(null);
-  const [liked, setLiked] = useState<Set<number>>(new Set());
 
   const images = [
-    { src: dishLambRack, alt: t("gallery.alt1"), likes: 142 },
-    { src: interiorImage, alt: t("gallery.alt2"), likes: 98 },
-    { src: dishFish, alt: t("gallery.alt3"), likes: 187 },
-    { src: interior2, alt: t("gallery.alt2"), likes: 76 },
-    { src: dishTrout, alt: t("gallery.alt3"), likes: 124 },
-    { src: dishBeetroot, alt: t("gallery.alt5"), likes: 93 },
-    { src: interior3, alt: t("gallery.alt2"), likes: 112 },
-    { src: dishLavaCake, alt: t("gallery.alt5"), likes: 203 },
-    { src: dishLamb, alt: t("gallery.alt4"), likes: 156 },
-    { src: drinkCocktail, alt: t("gallery.alt5"), likes: 88 },
-    { src: dishDessert, alt: t("gallery.alt5"), likes: 171 },
-    { src: drinkHotchoc, alt: t("gallery.alt5"), likes: 64 },
+    { src: dishLambRack, alt: t("gallery.alt1") },
+    { src: interiorImage, alt: t("gallery.alt2") },
+    { src: dishFish, alt: t("gallery.alt3") },
+    { src: interior2, alt: t("gallery.alt2") },
+    { src: dishTrout, alt: t("gallery.alt3") },
+    { src: dishBeetroot, alt: t("gallery.alt5") },
+    { src: interior3, alt: t("gallery.alt2") },
+    { src: dishLavaCake, alt: t("gallery.alt5") },
+    { src: dishLamb, alt: t("gallery.alt4") },
+    { src: drinkCocktail, alt: t("gallery.alt5") },
+    { src: dishDessert, alt: t("gallery.alt5") },
+    { src: drinkHotchoc, alt: t("gallery.alt5") },
   ];
-
-  const toggleLike = (i: number, e: React.MouseEvent) => {
-    e.stopPropagation();
-    setLiked((prev) => {
-      const next = new Set(prev);
-      next.has(i) ? next.delete(i) : next.add(i);
-      return next;
-    });
-  };
 
   return (
     <section id="myndir" className="py-16 md:py-24 px-6 bg-secondary">
-      <div className="max-w-2xl mx-auto">
-        {/* Instagram-style profile header */}
-        {/* Section header */}
+      <div className="max-w-6xl mx-auto">
         <ScrollReveal>
-          <div className="text-center mb-8">
+          <div className="text-center mb-12">
             <p className="font-body text-sm tracking-[0.2em] uppercase text-accent font-semibold mb-3">{t("gallery.label")}</p>
             <h2 className="font-heading text-3xl md:text-4xl lg:text-5xl font-bold text-foreground mb-3 md:mb-4">{t("gallery.title")}</h2>
+            <p className="font-body text-muted-foreground text-lg max-w-lg mx-auto">{t("gallery.subtitle")}</p>
           </div>
         </ScrollReveal>
 
-        <ScrollReveal delay={0.05}>
-          <div className="bg-card rounded-t-xl border border-border p-6 mb-0">
-            {/* Instagram logo header */}
-            <div className="flex items-center justify-between mb-5 pb-4 border-b border-border">
-              <svg className="h-7" viewBox="0 0 1200 340" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                <title>Instagram</title>
-                <text x="0" y="280" className="font-heading" style={{ fontSize: '320px', fontFamily: 'serif', fontStyle: 'italic' }}>Instagram</text>
-              </svg>
-              <a
-                href="https://www.instagram.com/eldhusid_reykjavik"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="font-body text-xs font-semibold text-accent hover:text-accent/80 transition-colors border border-accent rounded-md px-3 py-1.5"
-              >
-                {t("gallery.follow")}
-              </a>
-            </div>
-            <div className="flex items-center gap-4 mb-4">
-              <div className="w-16 h-16 md:w-20 md:h-20 rounded-full bg-gradient-to-br from-accent to-orange-400 p-[3px]">
-                <div className="w-full h-full rounded-full bg-card flex items-center justify-center overflow-hidden">
-                  <span className="font-heading text-xl md:text-2xl font-bold text-foreground">E</span>
-                </div>
-              </div>
-              <div className="flex-1">
-                <div className="flex items-center gap-2 mb-1">
-                  <h3 className="font-body font-bold text-foreground text-base">eldhusid_reykjavik</h3>
-                  <svg className="w-4 h-4 text-blue-500 fill-current" viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41L9 16.17z" /></svg>
-                </div>
-                <p className="font-body text-sm text-muted-foreground">{t("gallery.subtitle")}</p>
-              </div>
-            </div>
-            <div className="flex justify-around text-center border-t border-border pt-4">
-              <div>
-                <p className="font-body font-bold text-foreground text-sm">{images.length}</p>
-                <p className="font-body text-xs text-muted-foreground">posts</p>
-              </div>
-              <div>
-                <p className="font-body font-bold text-foreground text-sm">2.4k</p>
-                <p className="font-body text-xs text-muted-foreground">followers</p>
-              </div>
-              <div>
-                <p className="font-body font-bold text-foreground text-sm">186</p>
-                <p className="font-body text-xs text-muted-foreground">following</p>
-              </div>
-            </div>
-          </div>
-        </ScrollReveal>
-
-        {/* Tab bar */}
-        <ScrollReveal delay={0.05}>
-          <div className="bg-card border-x border-border flex justify-center">
-            <button className="flex items-center gap-1.5 px-6 py-3 border-t-2 border-foreground font-body text-xs font-semibold text-foreground tracking-wider uppercase">
-              <Grid3X3 size={14} /> Posts
-            </button>
-          </div>
-        </ScrollReveal>
-
-        {/* Instagram grid */}
         <ScrollReveal delay={0.1}>
-          <div className="bg-card border border-border rounded-b-xl overflow-hidden">
-            <div className="grid grid-cols-3 gap-[2px]">
-              {images.map((img, i) => (
-                <div
-                  key={i}
-                  className="relative aspect-square cursor-pointer group overflow-hidden"
-                  onClick={() => setSelected(i)}
-                >
-                  <img
-                    src={img.src}
-                    alt={img.alt}
-                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
-                    loading="lazy"
-                  />
-                  <div className="absolute inset-0 bg-foreground/0 group-hover:bg-foreground/30 transition-colors duration-200 flex items-center justify-center opacity-0 group-hover:opacity-100">
-                    <div className="flex items-center gap-1 text-white">
-                      <Heart size={16} fill="white" />
-                      <span className="font-body text-sm font-semibold">{img.likes + (liked.has(i) ? 1 : 0)}</span>
-                    </div>
-                  </div>
+          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-2 md:gap-3">
+            {images.map((img, i) => (
+              <div
+                key={i}
+                className="relative aspect-square cursor-pointer group overflow-hidden rounded-md"
+                onClick={() => setSelected(i)}
+              >
+                <img
+                  src={img.src}
+                  alt={img.alt}
+                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                  loading="lazy"
+                />
+                <div className="absolute inset-0 bg-foreground/0 group-hover:bg-foreground/20 transition-colors duration-300 flex items-center justify-center">
+                  <Instagram size={28} className="text-background opacity-0 group-hover:opacity-100 transition-opacity duration-300 drop-shadow-lg" />
                 </div>
-              ))}
-            </div>
+              </div>
+            ))}
+          </div>
+        </ScrollReveal>
+
+        <ScrollReveal delay={0.2}>
+          <div className="text-center mt-8">
+            <a
+              href="https://www.instagram.com/eldhusid_reykjavik"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 px-6 py-3 border-2 border-primary text-primary font-body font-semibold rounded-sm hover:bg-primary hover:text-primary-foreground transition-colors"
+            >
+              <Instagram size={18} />
+              {t("gallery.follow")} @eldhusid_reykjavik
+            </a>
           </div>
         </ScrollReveal>
       </div>
 
-      {/* Lightbox with Instagram post style */}
+      {/* Lightbox */}
       <AnimatePresence>
         {selected !== null && (
           <motion.div
@@ -159,45 +99,15 @@ const Gallery = () => {
             >
               <X size={32} />
             </button>
-            <motion.div
+            <motion.img
               initial={{ scale: 0.9, opacity: 0 }}
               animate={{ scale: 1, opacity: 1 }}
               exit={{ scale: 0.9, opacity: 0 }}
-              className="bg-card rounded-lg overflow-hidden max-w-lg w-full"
+              src={images[selected].src}
+              alt={images[selected].alt}
+              className="max-w-3xl w-full max-h-[85vh] object-contain rounded-lg"
               onClick={(e) => e.stopPropagation()}
-            >
-              <div className="flex items-center gap-3 p-3 border-b border-border">
-                <div className="w-8 h-8 rounded-full bg-gradient-to-br from-accent to-orange-400 p-[2px]">
-                  <div className="w-full h-full rounded-full bg-card flex items-center justify-center">
-                    <span className="font-heading text-xs font-bold text-foreground">E</span>
-                  </div>
-                </div>
-                <span className="font-body text-sm font-semibold text-foreground">eldhusid_reykjavik</span>
-              </div>
-              <img
-                src={images[selected].src}
-                alt={images[selected].alt}
-                className="w-full aspect-square object-cover"
-              />
-              <div className="p-3">
-                <div className="flex items-center justify-between mb-2">
-                  <div className="flex items-center gap-4">
-                    <button onClick={(e) => toggleLike(selected, e)}>
-                      <Heart
-                        size={24}
-                        className={`transition-colors ${liked.has(selected) ? "text-red-500 fill-red-500" : "text-foreground"}`}
-                      />
-                    </button>
-                    <MessageCircle size={24} className="text-foreground" />
-                    <Send size={24} className="text-foreground" />
-                  </div>
-                  <Bookmark size={24} className="text-foreground" />
-                </div>
-                <p className="font-body text-sm font-semibold text-foreground">
-                  {images[selected].likes + (liked.has(selected) ? 1 : 0)} likes
-                </p>
-              </div>
-            </motion.div>
+            />
           </motion.div>
         )}
       </AnimatePresence>
