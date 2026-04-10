@@ -31,6 +31,7 @@ const Index = () => {
       <Cta />
       <Promo />
       <Footer />
+      <CookieBanner />
     </div>
   );
 };
