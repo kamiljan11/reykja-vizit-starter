@@ -44,24 +44,44 @@ export const WaveSeparator = ({ className = "", flip = false }: { className?: st
   </svg>
 );
 
-/** Flame icon — small accent next to the restaurant name */
+/** Burning chef cap — logo accent next to the restaurant name */
 export const FlameAccent = ({ className = "" }: { className?: string }) => (
   <svg
-    viewBox="0 0 16 22"
+    viewBox="0 0 24 28"
     fill="none"
     xmlns="http://www.w3.org/2000/svg"
-    className={`w-4 h-5 ${className}`}
+    className={`w-5 h-6 ${className}`}
     aria-hidden="true"
   >
+    {/* Chef cap body */}
     <path
-      d="M8 0C8 0 2 7 2 13a6 6 0 0012 0c0-2-1-3.5-2.5-5C10 6.5 8 4 8 0z"
+      d="M5 18h14v3H5z"
       fill="currentColor"
-      opacity="0.8"
+      opacity="0.85"
     />
+    {/* Cap puff */}
     <path
-      d="M8 10c0 0-2 2-2 4.5a2.5 2.5 0 005 0C11 12 8 10 8 10z"
+      d="M4 18c-2 0-3.5-1.8-3.5-4 0-2 1.2-3.5 3-3.8C3.2 8.5 5 7 7.5 7c.8 0 1.5.2 2.1.5C10.5 5.8 11.8 5 13 5c1.5 0 2.8 1 3.5 2.5.5-.3 1.1-.5 1.7-.5 2.2 0 4 2 4 4.5 0 2.5-1.5 4.2-3.2 4.5"
       fill="currentColor"
-      opacity="0.4"
+      opacity="0.7"
+    />
+    {/* Hatband */}
+    <path
+      d="M5 18h14v1H5z"
+      fill="currentColor"
+      opacity="0.5"
+    />
+    {/* Flame on top — left flicker */}
+    <path
+      d="M9 7C9 7 7.5 4.5 8.5 2c.5 1.5 1.5 2 2 2.5C11 3 10.5 1 11.5 0c0 1.5 1 3 .5 4.5C11.5 6 10 7 9 7z"
+      fill="currentColor"
+      opacity="0.9"
+    />
+    {/* Flame on top — right flicker */}
+    <path
+      d="M14 8c0 0-1-2-.5-3.5.3 1 1 1.5 1.3 2 .1-1-.2-2.5.5-3.5 0 1 .7 2 .3 3.2-.3 1-1 1.8-1.6 1.8z"
+      fill="currentColor"
+      opacity="0.6"
     />
   </svg>
 );
