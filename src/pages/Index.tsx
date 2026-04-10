@@ -8,7 +8,10 @@ import Reviews from "@/components/Reviews";
 import Hours from "@/components/Hours";
 import Extras from "@/components/Extras";
 import Reservation from "@/components/Reservation";
-
+import Team from "@/components/Team";
+import Timeline from "@/components/Timeline";
+import Faq from "@/components/Faq";
+import Instagram from "@/components/Instagram";
 import Promo from "@/components/Promo";
 import Footer from "@/components/Footer";
 import CookieBanner from "@/components/CookieBanner";
@@ -19,12 +22,16 @@ const Index = () => {
       <Navbar />
       <Hero />
       <About />
+      <Team />
       <Menu />
       <Reviews />
       <Gallery />
       <Events />
       <Extras />
       <Reservation />
+      <Timeline />
+      <Faq />
+      <Instagram />
       <Hours />
       <Promo />
       <Footer />
