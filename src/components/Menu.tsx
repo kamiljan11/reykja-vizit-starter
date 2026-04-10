@@ -100,9 +100,17 @@ const Menu = () => {
 
         <ScrollReveal delay={0.3}>
           <div className="text-center mt-12">
-            <a href="#" className="inline-block px-8 py-3 border-2 border-primary text-primary font-body font-semibold rounded-sm hover:bg-primary hover:text-primary-foreground transition-colors">
+            <button
+              onClick={() => {
+                const keys: TabKey[] = ["starters", "mains", "desserts", "drinks"];
+                const nextIndex = (keys.indexOf(activeTab) + 1) % keys.length;
+                setActiveTab(keys[nextIndex]);
+                document.getElementById("matseðill")?.scrollIntoView({ behavior: "smooth" });
+              }}
+              className="inline-block px-8 py-3 border-2 border-primary text-primary font-body font-semibold rounded-sm hover:bg-primary hover:text-primary-foreground transition-colors"
+            >
               {t("menu.seeAll")}
-            </a>
+            </button>
           </div>
         </ScrollReveal>
       </div>
