@@ -40,7 +40,14 @@ const Footer = () => {
       <div className="max-w-6xl mx-auto mt-10 pt-6 border-t border-background/20">
         <p className="font-body text-xs text-background/50 text-center">
           © 2025 Eldhúsið. {t("footer.rights")} — Vefsíða hönnuð af{" "}
-          <span className="text-accent font-semibold">YourStudio</span> · frá 19.900 kr.
+          <a
+            href="https://kamiljan.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-accent font-semibold hover:underline"
+          >
+            Kamil Jan
+          </a>
         </p>
       </div>
     </footer>
