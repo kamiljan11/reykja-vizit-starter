@@ -39,7 +39,7 @@ const Footer = () => {
       </div>
       <div className="max-w-6xl mx-auto mt-10 pt-6 border-t border-background/20">
         <p className="font-body text-xs text-background/50 text-center">
-          © 2025 Eldhúsið. {t("footer.rights")} — Vefsíða hönnuð af{" "}
+          © 2025 Eldhúsið. {t("footer.rights")} {/* [ukryte 2026-07-21] — Vefsíða hönnuð af{" "}
           <a
             href="https://kamiljan.com"
             target="_blank"
@@ -47,7 +47,7 @@ const Footer = () => {
             className="text-accent font-semibold hover:underline"
           >
             Kamil Jan
-          </a>
+          </a> */}
         </p>
       </div>
     </footer>
