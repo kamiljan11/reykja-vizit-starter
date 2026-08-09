@@ -1,4 +1,4 @@
-import { useLanguage } from "@/i18n/LanguageContext";
+import { useLanguage } from "@/i18n/useLang";
 import { Lang, langLabels } from "@/i18n/translations";
 
 const langs: Lang[] = ["en", "is", "pl"];

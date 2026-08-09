@@ -1,6 +1,6 @@
 import heroDesktop from "@/assets/hero-desktop.jpg";
 import heroMobile from "@/assets/hero-mobile.jpg";
-import { useLanguage } from "@/i18n/LanguageContext";
+import { useLanguage } from "@/i18n/useLang";
 
 const Hero = () => {
   const { t } = useLanguage();

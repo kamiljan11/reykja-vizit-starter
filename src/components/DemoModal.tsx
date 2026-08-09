@@ -1,11 +1,9 @@
 import { createContext, useContext, useState, ReactNode } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { X } from "lucide-react";
-import { useLanguage } from "@/i18n/LanguageContext";
+import { useLanguage } from "@/i18n/useLang";
 
-const DemoContext = createContext<{ openDemo: () => void }>({ openDemo: () => {} });
-
-export const useDemo = () => useContext(DemoContext);
+import { DemoContext } from "./useDemo";
 
 export const DemoProvider = ({ children }: { children: ReactNode }) => {
   const { t } = useLanguage();

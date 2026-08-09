@@ -1,5 +1,5 @@
 import { Instagram as InstaIcon } from "lucide-react";
-import { useLanguage } from "@/i18n/LanguageContext";
+import { useLanguage } from "@/i18n/useLang";
 import ScrollReveal from "./ScrollReveal";
 import dishFish from "@/assets/dish-fish.jpg";
 import dishLamb from "@/assets/dish-lamb.jpg";

@@ -1,5 +1,5 @@
 import { Globe, Camera, BarChart3, Zap, ArrowRight } from "lucide-react";
-import { useLanguage } from "@/i18n/LanguageContext";
+import { useLanguage } from "@/i18n/useLang";
 import { CrossHatchBackground } from "./Decorations";
 
 const Promo = () => {

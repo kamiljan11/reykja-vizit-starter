@@ -1,7 +1,7 @@
 import { Gift } from "lucide-react";
-import { useLanguage } from "@/i18n/LanguageContext";
+import { useLanguage } from "@/i18n/useLang";
 import ScrollReveal from "./ScrollReveal";
-import { useDemo } from "./DemoModal";
+import { useDemo } from "./useDemo";
 
 const GiftCards = () => {
   const { t } = useLanguage();

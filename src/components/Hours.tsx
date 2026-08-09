@@ -1,7 +1,7 @@
 import { Clock, MapPin, Phone } from "lucide-react";
-import { useLanguage } from "@/i18n/LanguageContext";
+import { useLanguage } from "@/i18n/useLang";
 import ScrollReveal from "./ScrollReveal";
-import { useDemo } from "./DemoModal";
+import { useDemo } from "./useDemo";
 
 const Hours = () => {
   const { t } = useLanguage();

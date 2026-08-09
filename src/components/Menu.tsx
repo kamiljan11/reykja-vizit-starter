@@ -10,7 +10,7 @@ import dishLavaCake from "@/assets/dish-lava-cake.jpg";
 import drinkBeer from "@/assets/drink-beer.jpg";
 import drinkCocktail from "@/assets/drink-cocktail.jpg";
 import drinkHotchoc from "@/assets/drink-hotchoc.jpg";
-import { useLanguage } from "@/i18n/LanguageContext";
+import { useLanguage } from "@/i18n/useLang";
 import ScrollReveal from "./ScrollReveal";
 import { DiamondDots, LeafSprig, DotGridBackground } from "./Decorations";
 

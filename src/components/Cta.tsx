@@ -1,6 +1,6 @@
-import { useLanguage } from "@/i18n/LanguageContext";
+import { useLanguage } from "@/i18n/useLang";
 import ScrollReveal from "./ScrollReveal";
-import { useDemo } from "./DemoModal";
+import { useDemo } from "./useDemo";
 
 const Cta = () => {
   const { t } = useLanguage();

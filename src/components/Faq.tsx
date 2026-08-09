@@ -1,4 +1,4 @@
-import { useLanguage } from "@/i18n/LanguageContext";
+import { useLanguage } from "@/i18n/useLang";
 import ScrollReveal from "./ScrollReveal";
 import { DotGridBackground } from "./Decorations";
 import {

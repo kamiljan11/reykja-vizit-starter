@@ -1,7 +1,7 @@
 import teamOwners from "@/assets/team-owners.jpg";
 import teamChef from "@/assets/team-chef.jpg";
 import teamServer from "@/assets/team-server.jpg";
-import { useLanguage } from "@/i18n/LanguageContext";
+import { useLanguage } from "@/i18n/useLang";
 import ScrollReveal from "./ScrollReveal";
 
 const Team = () => {

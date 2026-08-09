@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 import interiorImage from "@/assets/interior.jpg";
 import interior2 from "@/assets/interior-2.jpg";
 import interior3 from "@/assets/interior-3.jpg";
-import { useLanguage } from "@/i18n/LanguageContext";
+import { useLanguage } from "@/i18n/useLang";
 import ScrollReveal from "./ScrollReveal";
 import { KnotDivider } from "./Decorations";
 import { TopoBackground } from "./Decorations";

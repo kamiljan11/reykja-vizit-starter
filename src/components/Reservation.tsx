@@ -2,9 +2,9 @@ import { useState, useMemo } from "react";
 import heroImage from "@/assets/hero-food.jpg";
 import { CalendarIcon, Users, ChevronLeft, ChevronRight, CheckCircle, Share2 } from "lucide-react";
 import { GrainBackground } from "./Decorations";
-import { useLanguage } from "@/i18n/LanguageContext";
+import { useLanguage } from "@/i18n/useLang";
 import ScrollReveal from "./ScrollReveal";
-import { useDemo } from "./DemoModal";
+import { useDemo } from "./useDemo";
 
 type Step = "when" | "guests" | "book";
 

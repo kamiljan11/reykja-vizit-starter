@@ -1,8 +1,8 @@
 import { ShoppingBag, Gift, Percent } from "lucide-react";
-import { useLanguage } from "@/i18n/LanguageContext";
+import { useLanguage } from "@/i18n/useLang";
 import ScrollReveal from "./ScrollReveal";
 import { TopoBackground } from "./Decorations";
-import { useDemo } from "./DemoModal";
+import { useDemo } from "./useDemo";
 
 const Extras = () => {
   const { t } = useLanguage();

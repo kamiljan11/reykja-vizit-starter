@@ -1,5 +1,5 @@
 import { Instagram } from "lucide-react";
-import { useLanguage } from "@/i18n/LanguageContext";
+import { useLanguage } from "@/i18n/useLang";
 import { FlameAccent, WaveSeparator } from "./Decorations";
 
 const Footer = () => {

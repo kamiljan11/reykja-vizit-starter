@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { X, Instagram } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
-import { useLanguage } from "@/i18n/LanguageContext";
+import { useLanguage } from "@/i18n/useLang";
 import ScrollReveal from "./ScrollReveal";
 import { KnotDivider, NordicPatternBackground } from "./Decorations";
 import dishFish from "@/assets/dish-fish.jpg";

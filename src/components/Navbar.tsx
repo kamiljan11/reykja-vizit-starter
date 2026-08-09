@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import { Menu, X } from "lucide-react";
-import { useLanguage } from "@/i18n/LanguageContext";
+import { useLanguage } from "@/i18n/useLang";
 import LanguageSwitcher from "./LanguageSwitcher";
 import { FlameAccent } from "./Decorations";
 
