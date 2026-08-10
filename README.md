@@ -1,26 +1,57 @@
-# Reykjavik Restaurant Demo
+# Eldhúsið — Restaurant Demo (Icelandic)
 
-zastanow sie co dla demowki strony potrzebowal by klient ktory zlecil nam wykonanie jego strony www dla jego restauracji w reykjaviku nie fancy restauracji takiej normalnej jakie boxy jaka narracja jakie grafiki jakie moduły  - chcemy zrobic ładna stronke ktora bedzie jako demo typu ze mozesz taka strone miec zaprojektowana za 19900 isk unikatowa dla ciebie  i zrob mi
+**Status:** sales demo · **Built by** [Kamil Jan](https://kamiljan.com)
 
-This project was built with [Lovable](https://lovable.dev).
+Demo site for a family restaurant in central Reykjavík — honest food from Icelandic
+ingredients, no fine-dining pretence. Deliberately built for an ordinary neighbourhood
+restaurant rather than an aspirational one, because that is the actual customer.
 
-**Live app**: https://reykja-vizit-starter.lovable.app
+## What this repo is — and is not
 
-## Build with Lovable
+This is a **demonstration site**, not a live business. Eldhúsið is a fictional restaurant invented
+to show a specific kind of prospective client what their own site could look and feel like,
+before they commit to anything.
 
-Continue developing this project in the [Lovable editor](https://lovable.dev/projects/f6cb5393-4829-415d-ac73-0a34f1c9d482).
+The commercial context: [Reykjawwwik](https://reykjawwwik.is) sells small Icelandic businesses
+a designed, unique website. Sending a link beats describing a mockup, so each target trade
+gets a finished demo it can recognise itself in — a restaurant owner sees a restaurant site, not a generic template.
 
-- **Ship faster**: describe what you want to build and Lovable handles the code.
-- **Stay in sync**: every change made in Lovable is committed straight to this repository.
-- **Full ownership**: this code is yours. Push to `main` on GitHub and your changes sync back into Lovable, ready for your next prompt.
+No real customer data, no real bookings, no payment integration. Any names, prices, reviews
+and photos are placeholders.
 
-## Development
+## What it shows
 
-Prefer working locally? You need Node.js and npm — [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating).
+- Menu presentation with dish photography
+- Opening hours, location and contact kept above the fold
+- Table booking enquiry
+- Icelandic-language copy throughout
 
-```sh
-git clone <this-repository-url>
-cd <repository-name>
-npm i
+## Stack
+
+React + TypeScript · Vite · React Router · Tailwind CSS · Playwright for E2E · hosted on
+Lovable. No backend — a demo has nothing to persist.
+
+## Running locally
+
+```bash
+npm install
 npm run dev
 ```
+
+```bash
+npm run lint
+npm run build
+npx playwright test
+```
+
+## How security is handled
+
+Nothing sensitive lives here by design: no backend, no database, no keys, no real personal
+data. Even so, the repo runs the same gates as the production systems in this account — each
+push triggers build, lint, typecheck, Playwright E2E, Semgrep static analysis and a Gitleaks
+secret scan, and a pre-commit hook blocks credential-shaped strings. A demo repo is exactly
+where standards quietly slip, so it does not get an exemption.
+
+## Licence
+
+Proprietary. Published for reference, not for reuse.
